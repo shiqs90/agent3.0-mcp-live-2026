@@ -61,3 +61,65 @@ if __name__ == "__main__":
 
     print("Shape: client.chat.completions.create(...) -> .choices[0].message.content")
     print("This exact shape is what Groq, OpenRouter, and OpenAI all actually use.")
+
+
+
+# https://developers.openai.com/api/docs/guides/completions
+
+
+"""
+_6_fake_ai_call.py
+
+A simple fake AI without using classes.
+Run with: uv run _6_fake_ai_call.py
+"""
+
+
+def fake_ai(model, max_tokens, messages):
+    # Get the last user message
+    user_message = messages[-1]["content"].lower()
+
+    # Simple rule-based replies
+    if "currency" in user_message or "convert" in user_message:
+        reply = "I'd use a currency conversion tool instead of guessing."
+
+    elif "weather" in user_message:
+        reply = "I'd use a weather tool to check the latest weather."
+
+    else:
+        reply = "I'm just a fake AI. I'm using simple if-else rules."
+
+    # Return data in the same format as a real AI API
+    return {
+        "choices": [
+            {
+                "message": {
+                    "content": reply
+                }
+            }
+        ]
+    }
+
+
+questions = [
+    "Convert 50 dollars to euros.",
+
+]
+
+for question in questions:
+    response = fake_ai(
+        model="fake-model",
+        max_tokens=200,
+        messages=[
+            {
+                "role": "user",
+                "content": question
+            }
+        ]
+    )
+
+    print(f"User: {question}")
+    print(f"Stand-in: {response['choices'][0]['message']['content']}\n")
+
+
+print("Shape: fake_ai(...) -> response['choices'][0]['message']['content']")

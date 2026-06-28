@@ -63,6 +63,7 @@ class Book:
     title: str
     author: str
     pages_read: int = 0
+    # tags = []
     tags: list = field(default_factory=list)   # mutable defaults need field(default_factory=...)
 
     def read(self, pages: int) -> None:
