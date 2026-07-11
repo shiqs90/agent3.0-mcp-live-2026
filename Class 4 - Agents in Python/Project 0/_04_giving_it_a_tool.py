@@ -42,6 +42,8 @@ def ask_groq(question: str) -> str:
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile", max_tokens=200, messages=[{"role": "user", "content": question}]
     )
+    print("Instructions to model: ", question)
+    print("Answering question using Groq API...", response.choices[0].message.content)
     return response.choices[0].message.content
 
 
@@ -86,6 +88,8 @@ def extract_weather_question(user_message: str) -> WeatherQuestion | str:
     )
     raw_reply = ask_ai(instruction)
 
+    print(f"Raw reply from model: {raw_reply!r}")
+
     try:
         cleaned = raw_reply.strip().removeprefix("```json").removesuffix("```").strip()
         data = json.loads(cleaned)
@@ -120,6 +124,8 @@ def answer_weather_question(user_message: str) -> str:
     Nothing here is decided by the model beyond the extraction step.
     """
     extracted = extract_weather_question(user_message)
+    print(f"Extracted: {extracted!r}")
+    # extracted is of Type WeatherQuestion
     if not isinstance(extracted, WeatherQuestion):
         return f"Could not extract a city: {extracted}"
     return get_weather(extracted.city)

@@ -23,7 +23,9 @@ def ask_openai(question: str) -> str:
         max_tokens=200,
         messages=[{"role": "user", "content": question}],
     )
-    return response.choices[0].message.content
+
+    print(response)
+    return response.choices[0].message.content # 2024
 
 
 def ask_anthropic(question: str) -> str:
@@ -49,7 +51,7 @@ def ask_groq(question: str) -> str:
     the request and response shapes are otherwise identical to ask_openai().
     """
     from openai import OpenAI
-
+    print("Answering question using Groq API...")
     client = OpenAI(api_key=os.environ["GROQ_API_KEY"], base_url="https://api.groq.com/openai/v1")
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",

@@ -51,6 +51,23 @@ get_weather_schema = {
     },
 }
 
+get_calculator_schema = {
+    "type": "function",
+    "function": {
+        "name": "calculator",
+        "description": "Use this tool to perform calculations. Use this whenever "
+                        "the user asks for a calculation or a math problem.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "expression": {"type": "string", "description": "The mathematical expression to calculate, e.g. '2 + 2'."}
+            },
+            "required": ["expression"],
+        },
+    },
+}
+
+
 
 def get_client_and_model():
     """Picks whichever OpenAI-compatible provider has a key set. Raises
@@ -88,19 +105,46 @@ def ask_ai_to_choose(question: str):
         model=model,
         max_tokens=300,
         messages=[{"role": "user", "content": question}],
-        tools=[get_weather_schema],
+        tools=[get_weather_schema, get_calculator_schema],
     )
     return response.choices[0].message
 
 
 if __name__ == "__main__":
-    question = "What's the weather like in Tokyo right now?"
+    question = "tell me weather in Tokyo?"
     message = ask_ai_to_choose(question)
+
+    print(f"Model's raw reply: {message!r}")
 
     if message.tool_calls:
         call = message.tool_calls[0]
+        # print('\n\n\n')
+        # print(call)
         arguments = json.loads(call.function.arguments)
+        # print('\n\n\n')
+        # print(arguments, call.function.name)
         result = get_weather(**arguments)
         print(f"{call.function.name}({arguments}) -> {result}")
     else:
         print(message.content)
+
+
+
+'''
+Hi How are you
+
+Model's raw reply: ChatCompletionMessage(content="I'm just a computer program, so I don't have feelings, but I'm here and ready to help you! How can I assist you today?", refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=None)
+
+
+what is the weather like in Tokyo right now?
+
+Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy48', function=Function(arguments='{"city":"Tokyo"}', name='get_weather'), type='function')])
+
+What is 2 times 2
+
+Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_xOvtjwScctaVoFq3YIX8cwvn', function=Function(arguments='{"expression":"2 * 2"}', name='calculator'), type='function')])
+
+
+'''
+
+

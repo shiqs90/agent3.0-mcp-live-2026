@@ -23,6 +23,9 @@ def ask_openai(question: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini", max_tokens=200, messages=[{"role": "user", "content": question}]
     )
+    print(question)
+    print('openAI',response.choices[0].message.content)
+
     return response.choices[0].message.content
 
 
@@ -78,8 +81,8 @@ class WeatherQuestion(BaseModel):
     city name plus whether the person wants Fahrenheit instead of Celsius.
     """
 
-    city: str
-    wants_fahrenheit: bool = False
+    city: str 
+    wants_fahrenheit: bool = False 
 
 
 def extract_weather_question(user_message: str) -> WeatherQuestion | str:
@@ -96,6 +99,7 @@ def extract_weather_question(user_message: str) -> WeatherQuestion | str:
     )
     raw_reply = ask_ai(instruction)
 
+    print(f" \n \n \n Raw reply from model: {raw_reply!r}")
     try:
         cleaned = raw_reply.strip().removeprefix("```json").removesuffix("```").strip()
         data = json.loads(cleaned)

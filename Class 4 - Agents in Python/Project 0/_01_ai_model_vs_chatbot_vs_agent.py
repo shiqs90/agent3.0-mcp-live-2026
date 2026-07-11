@@ -10,7 +10,7 @@ def ai_model(question: str) -> str:
     and remembers nothing about any call that happened before or after it.
     This is the whole capability of a raw model with no wrapping around it.
     """
-    return f"[stub prediction for]: {question}"
+    return f"[Mock prediction for]: {question}"
 
 
 class Chatbot:
@@ -45,8 +45,8 @@ class Agent:
         self.history: list[dict] = []
         self.tools = tools
 
-    def decide_tool(self, question: str) -> str | None:
-        for name in self.tools:
+    def decide_tool(self, question: str) -> str | None: # question - use calculator tool to tell what is 2 + 2
+        for name in self.tools:  # self.tools = ['weather']
             if name in question.lower():
                 return name
         return None
@@ -75,3 +75,5 @@ if __name__ == "__main__":
     agent = Agent(tools={"weather": weather})
     print(agent.ask("What's the weather like today?"))
     print(agent.ask("What's the capital of France?"))
+
+# stub ======= mock
