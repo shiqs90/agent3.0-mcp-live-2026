@@ -110,8 +110,8 @@ def ask_ai_to_choose(question: str):
     return response.choices[0].message
 
 
-if __name__ == "__main__":
-    question = "tell me weather in Tokyo?"
+if __name__ == "__main__": 
+    question = "what is 1 usd in INR?"
     message = ask_ai_to_choose(question)
 
     print(f"Model's raw reply: {message!r}")

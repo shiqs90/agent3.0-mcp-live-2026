@@ -99,7 +99,6 @@ def run_agent(messages: list, max_turns: int = 4) -> str:
                         "type": "function",
                         "function": {"name": call.function.name, "arguments": call.function.arguments},
                     }
-                    for call in message.tool_calls
                 ],
             }
         )
