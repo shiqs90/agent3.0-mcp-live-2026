@@ -23,10 +23,17 @@ SAMPLE_WEATHER = {
 
 
 def get_weather(city: str) -> str:
+    """Get the current weather for a city. Returns a string with the temperature and conditions, or an error message if the city is not found."""
     data = SAMPLE_WEATHER.get(city.lower())
     if data is None:
         return f"No weather data for {city!r}."
     return f"{city.title()}: {data['celsius']}C, {data['conditions']}"
+
+
+def get_currency(from_currency: str, to_currency: str) -> str:
+    """Get the exchange rate between two currencies. Returns a string with the rate, or an error message if the currencies are not found."""
+    # Placeholder implementation - replace with actual currency conversion logic
+    return f"The exchange rate from {from_currency} to {to_currency} is 1.0."
 
 
 TOOL_SCHEMAS = [
@@ -44,7 +51,10 @@ TOOL_SCHEMAS = [
     }
 ]
 
-TOOLS_BY_NAME = {"get_weather": get_weather}
+def get_currency(from_currency: str, to_currency: str) -> str:
+    pass
+
+TOOLS_BY_NAME = {"get_weather": get_weather,'get_currency':get_currency}
 
 
 def get_client_and_model():
@@ -130,6 +140,9 @@ def chat() -> None:
         conversation_memory.append({"role": "user", "content": user_input})
         answer = run_agent(conversation_memory)
         print(f"Agent: {answer}\n")
+
+    print("Goodbye! \n\n\n")
+    print(conversation_memory)
 
 
 if __name__ == "__main__":

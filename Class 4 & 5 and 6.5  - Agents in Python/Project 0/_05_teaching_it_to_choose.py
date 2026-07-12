@@ -211,14 +211,20 @@ if __name__ == "__main__":
 
 
 '''
-Hi How are you
+Hi How are you ?
 
 Model's raw reply: ChatCompletionMessage(content="I'm just a computer program, so I don't have feelings, but I'm here and ready to help you! How can I assist you today?", refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=None)
 
 
 what is the weather like in Tokyo right now?
 
-Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy48', function=Function(arguments='{"city":"Tokyo"}', name='get_weather'), type='function')])
+Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=
+
+
+[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy48', function=Function(arguments='{"city":"Tokyo"}', name='get_weather'), type='function')]
+
+
+)
 
 What is 2 times 2?
 
