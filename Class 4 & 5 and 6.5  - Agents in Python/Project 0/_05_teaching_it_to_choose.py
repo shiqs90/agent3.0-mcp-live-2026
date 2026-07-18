@@ -219,8 +219,6 @@ Model's raw reply: ChatCompletionMessage(content="I'm just a computer program, s
 what is the weather like in Tokyo right now?
 
 Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=
-
-
 [ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy48', function=Function(arguments='{"city":"Tokyo"}', name='get_weather'), type='function')]
 
 
@@ -232,8 +230,27 @@ Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assis
 
 What is the capital of Japan?
 
-Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='nf9wkeb1q', function=Function(arguments='{"country":"Japan"}', name='get_capital'), type='function')])
+Model's raw reply: ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='nf9wkeb1q', function=Function(arguments='{"country":"Japan"}', name='get_capital'), type='function'),
+ChatCompletionMessageToolCall(id='nf9wkeb3q', function=Function(arguments='{"country":"Tokyo"}', name='get_capital'), type='function'),
+ChatCompletionMessageToolCall(id='nf9w4eb1q', function=Function(arguments='{"country":"Delhi"}', name='get_capital'), type='function')])
 
 '''
+'''
+
+ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=
+[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy48', function=Function(arguments='{"city":"Delhi"}', name='get_weather'), type='function')]
+
+call_x4l82uTQXd3UR6Nw4Nq8wy48 - wrong weather API key
+
+ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=
+[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy49', function=Function(arguments='{"city":"Delhi"}', name='get_weather'), type='function')]
 
 
+call_x4l82uTQXd3UR6Nw4Nq8wy49 - wrong weather API key
+
+ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=
+[ChatCompletionMessageToolCall(id='call_x4l82uTQXd3UR6Nw4Nq8wy50', function=Function(arguments='{"city":"Delhi"}', name='get_weather'), type='function')]
+
+
+
+'''

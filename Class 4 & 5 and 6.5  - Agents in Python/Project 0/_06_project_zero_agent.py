@@ -7,6 +7,7 @@ Setup: uv add openai python-dotenv
 .env:  set at least one of GROQ_API_KEY / OPENROUTER_API_KEY / OPENAI_API_KEY
 """
 
+from email import message
 import json
 import os
 
@@ -32,6 +33,7 @@ def get_weather(city: str) -> str:
 
 def get_currency(from_currency: str, to_currency: str) -> str:
     """Get the exchange rate between two currencies. Returns a string with the rate, or an error message if the currencies are not found."""
+    
     # Placeholder implementation - replace with actual currency conversion logic
     return f"The exchange rate from {from_currency} to {to_currency} is 1.0."
 
@@ -56,6 +58,13 @@ def get_currency(from_currency: str, to_currency: str) -> str:
 
 TOOLS_BY_NAME = {"get_weather": get_weather,'get_currency':get_currency}
 
+def call_tools_async(tool_calls, messages):
+    """Call the tools asynchronously and append the results to messages."""
+    for call in tool_calls:
+        arguments = json.loads(call.function.arguments)
+        tool_function = TOOLS_BY_NAME[call.function.name]
+        result = tool_function(**arguments)
+        messages.append({"role": "tool", "tool_call_id": call.id, "content": str(result)})
 
 def get_client_and_model():
     """Same provider picker as File 5. Raises if no compatible key is set."""
@@ -90,6 +99,7 @@ def run_agent(messages: list, max_turns: int = 4) -> str:
     client, model = get_client_and_model()
 
     for _ in range(max_turns):
+
         response = client.chat.completions.create(
             model=model, max_tokens=300, messages=messages, tools=TOOL_SCHEMAS
         )
@@ -114,6 +124,12 @@ def run_agent(messages: list, max_turns: int = 4) -> str:
             }
         )
 
+
+        l1 = [1,2,3,4,5]
+        l2 = [x*2 for x in l1]
+        tool_calls = [{"id":each_tool_call.id, "type":function,"function": {"name": each_tool_call.function.name, "arguments": each_tool_call.function.arguments}} for each_tool_call in message.tool_calls]
+
+
         for call in message.tool_calls:
             arguments = json.loads(call.function.arguments)
             tool_function = TOOLS_BY_NAME[call.function.name]
@@ -121,6 +137,17 @@ def run_agent(messages: list, max_turns: int = 4) -> str:
             messages.append({"role": "tool", "tool_call_id": call.id, "content": str(result)})
 
     return "Reached max_turns without a final answer."
+
+
+for i in range(5):
+
+
+    for j in range(10):
+        pass
+
+    for j in range(10):
+        pass
+
 
 
 def chat() -> None:
