@@ -49,7 +49,7 @@ flowchart TD
 > **"Is LangSmith the same as print statements?"**
 > Not remotely — a LangSmith trace shows the FULL sequence of every model call, tool call, and middleware decision, plus latency and token cost per step. The difference between a diary and a flight recorder.
 
-📖 **[Full Class 07 write-up in classes_summary →](<../classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>)**
+📖 **[Full Class 07 write-up in classes_summary →](<../../classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>)**
 
 ---
 
@@ -104,7 +104,7 @@ structured_model = openai_model.with_structured_output(SupportTicket)
 
 **`ProviderStrategy` vs. `ToolStrategy`:** the provider's own native feature (fast, only where supported) vs. a synthetic tool call that fakes it (works almost anywhere). Auto-selected unless forced.
 
-📖 **[Full Class 08 write-up in classes_summary →](<../classes_summary/08 - 19 Jul - Inside the Model.md>)**
+📖 **[Full Class 08 write-up in classes_summary →](<../../classes_summary/08 - 19 Jul - Inside the Model.md>)**
 
 ---
 
@@ -120,4 +120,4 @@ structured_model = openai_model.with_structured_output(SupportTicket)
 | [`Notebook For Reference/Langchain_structured_output_tools_agents.ipynb`](<Notebook For Reference/Langchain_structured_output_tools_agents.ipynb>) | 08→09 | Bridges into the CineBot arc |
 
 ---
-⬅️ [Class 06](<../06 - 12 Jul - Introduction to LangChain/README.md>) · [Course index](<../README.md>) · ➡️ [Class 09-10](<../09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>)
+⬆️ [Weekend 04 overview](<../README.md>) · ⬅️ [Class 06](<../../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 09-10](<../../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>)

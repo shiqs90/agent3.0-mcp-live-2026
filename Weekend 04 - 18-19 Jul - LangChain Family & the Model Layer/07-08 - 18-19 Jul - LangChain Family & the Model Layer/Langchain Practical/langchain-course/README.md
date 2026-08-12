@@ -1,6 +1,6 @@
 # LangChain Practical — `langchain-course`
 
-Real `uv`-based LangChain project for **[Class 07](<../../../classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>)** (18 July 2026): environment setup, `init_chat_model`, and message types, hands-on in VS Code rather than a notebook.
+Real `uv`-based LangChain project for **[Class 07](<../../../../classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>)** (18 July 2026): environment setup, `init_chat_model`, and message types, hands-on in VS Code rather than a notebook.
 
 ## Structure
 

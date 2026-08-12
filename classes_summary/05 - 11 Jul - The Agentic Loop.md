@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 11 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/`](<../04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/>) — files `_05`–`_07`, finishing **Project Zero**
+> 📂 **Code for this class:** [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/>) — files `_05`–`_07`, finishing **Project Zero**
 
 ---
 
@@ -11,7 +11,7 @@
 
 ## 🧠 Letting the Model Choose a Tool — the Real Schema
 
-[`_05_teaching_it_to_choose.py`](<../04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_05_teaching_it_to_choose.py>) hands the model a genuine "menu" of tool schemas — not the function itself, only its description:
+[`_05_teaching_it_to_choose.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_05_teaching_it_to_choose.py>) hands the model a genuine "menu" of tool schemas — not the function itself, only its description:
 
 ```python
 get_weather_schema = {
@@ -59,7 +59,7 @@ That second example is a genuinely useful, slightly messy real result: a single 
 
 ## 🔁 The Agentic Loop, Assembled
 
-[`_06_project_zero_agent.py`](<../04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_06_project_zero_agent.py>) is where every previous file's pattern locks together into the real loop:
+[`_06_project_zero_agent.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_06_project_zero_agent.py>) is where every previous file's pattern locks together into the real loop:
 
 ```python
 def run_agent(messages: list, max_turns: int = 4) -> str:
@@ -108,7 +108,7 @@ def chat() -> None:
 
 ## 🎨 The Streamlit Front End — Three Real Tools
 
-[`_07_streamlit_app.py`](<../04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_07_streamlit_app.py>) is the same `run_agent` loop, now driving a real chat UI with three tools registered — weather (mock data), a sandboxed `calculator`, and **live** currency conversion via the Frankfurter API:
+[`_07_streamlit_app.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_07_streamlit_app.py>) is the same `run_agent` loop, now driving a real chat UI with three tools registered — weather (mock data), a sandboxed `calculator`, and **live** currency conversion via the Frankfurter API:
 
 ```python
 def calculator(expression: str) -> str:
@@ -148,7 +148,7 @@ The AI is called again after a tool runs because it never automatically "knows" 
 
 ## ➡️ Up Next
 **[Class 06 — 12 Jul — Introduction to LangChain »](<06 - 12 Jul - Introduction to LangChain.md>)**
-📂 Code folder: [`06 - 12 Jul - Introduction to LangChain/`](<../06 - 12 Jul - Introduction to LangChain/>)
+📂 Code folder: [`06 - 12 Jul - Introduction to LangChain/`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index. ⬅️ [Class 04](<04 - 5 Jul - Anatomy of an Agent.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 03 overview](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/README.md>). ⬅️ [Class 04](<04 - 5 Jul - Anatomy of an Agent.md>)*

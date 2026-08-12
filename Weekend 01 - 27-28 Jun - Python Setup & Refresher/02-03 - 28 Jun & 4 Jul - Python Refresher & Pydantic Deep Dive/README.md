@@ -94,7 +94,7 @@ def slow_greeting(name):
 
 🔗 **Why this matters later:** agent tool definitions (`@tool`) use exactly this pattern. File `_10` later in this same folder reuses this exact wrapper, unchanged, to register a real tool.
 
-📖 **[Full Class 02 write-up in classes_summary →](<../classes_summary/02 - 28 Jun - Python Refresher.md>)**
+📖 **[Full Class 02 write-up in classes_summary →](<../../classes_summary/02 - 28 Jun - Python Refresher.md>)**
 
 ---
 
@@ -163,7 +163,7 @@ except ValidationError as exc:
 | **Context Window** | A whiteboard of fixed size — oldest content erased once full |
 | **Parameters** | Billions of fixed weights set at training time — not the same as tokens |
 
-📖 **[Full Class 03 write-up in classes_summary →](<../classes_summary/03 - 4 Jul - Pydantic Deep Dive.md>)**
+📖 **[Full Class 03 write-up in classes_summary →](<../../classes_summary/03 - 4 Jul - Pydantic Deep Dive.md>)**
 
 ---
 
@@ -242,4 +242,4 @@ Files `_5`, `_7`, `_9`, `_10`, `_12`, `_13`, `_14` make real network calls (Fran
 If you can't point to which earlier file taught a pattern reused later, that pattern doesn't belong here yet.
 
 ---
-⬅️ [Class 01](<../01 - 27 Jun - Python Setup & API Basics/README.md>) · [Course index](<../README.md>) · ➡️ [Class 04-05](<../04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>)
+⬆️ [Weekend 01 overview](<../README.md>) · ⬅️ [Class 01](<../01 - 27 Jun - Python Setup & API Basics/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 04-05](<../../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>)

@@ -75,7 +75,7 @@ def answer_weather_question(user_message: str) -> str:
 
 That's the exact gap Class 05 closes.
 
-📖 **[Full Class 04 write-up in classes_summary →](<../classes_summary/04 - 5 Jul - Anatomy of an Agent.md>)**
+📖 **[Full Class 04 write-up in classes_summary →](<../../classes_summary/04 - 5 Jul - Anatomy of an Agent.md>)**
 
 ---
 
@@ -131,7 +131,7 @@ if user_input:
         st.write(answer)
 ```
 
-📖 **[Full Class 05 write-up in classes_summary →](<../classes_summary/05 - 11 Jul - The Agentic Loop.md>)**
+📖 **[Full Class 05 write-up in classes_summary →](<../../classes_summary/05 - 11 Jul - The Agentic Loop.md>)**
 
 ---
 
@@ -150,4 +150,4 @@ if user_input:
 See [`Project 0/README.md`](<Project 0/README.md>) for setup and run instructions.
 
 ---
-⬅️ [Class 02-03](<../02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>) · [Course index](<../README.md>) · ➡️ [Class 06](<../06 - 12 Jul - Introduction to LangChain/README.md>)
+⬆️ [Weekend 02 overview](<../README.md>) · ⬅️ [Class 02-03](<../../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 06](<../../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/README.md>)

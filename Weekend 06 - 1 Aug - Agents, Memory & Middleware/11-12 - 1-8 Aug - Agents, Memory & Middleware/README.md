@@ -58,7 +58,7 @@ Real doc note: *"Summarization is text-oriented context compression. It does not
 
 Labeled directly on the drawing: **"without in memory saver"** → *"Empty & Nothing Remembered"* vs. **"with in memory saver"** → *"it has all the Previous messages."*
 
-📖 **[Full Class 11 write-up in classes_summary →](<../classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>)**
+📖 **[Full Class 11 write-up in classes_summary →](<../../classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>)**
 
 ---
 
@@ -110,7 +110,7 @@ custom_pii_agent = create_agent(model="openai:gpt-5-mini", tools=cinebot_tools,
 
 > **Fraud detection in fintech** — a `wrap_tool_call` hook around every transaction-executing tool. **Healthcare** — `PIIMiddleware` redaction as a HIPAA legal requirement. **Customer support** — HITL approval gates before refunds/account changes. **Internal tools** — audit logging via `wrap_tool_call`, close to universal wherever "who did what, when" needs a real answer.
 
-📖 **[Full Class 12 write-up, with every middleware's complete code →](<../classes_summary/12 - 08 Aug - Mastering Middleware.md>)**
+📖 **[Full Class 12 write-up, with every middleware's complete code →](<../../classes_summary/12 - 08 Aug - Mastering Middleware.md>)**
 
 ---
 
@@ -126,4 +126,4 @@ custom_pii_agent = create_agent(model="openai:gpt-5-mini", tools=cinebot_tools,
 🔗 Live Colab used in class: [Middleware notebook](https://colab.research.google.com/drive/1Qt9uU2HhDvtFTWwbbFBYxK86jJypv1w_?usp=sharing)
 
 ---
-⬅️ [Class 09-10](<../09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>) · [Course index](<../README.md>)
+⬆️ [Weekend 06 overview](<../README.md>) · ⬅️ [Class 09-10](<../../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>) · [Course index](<../../README.md>) · ➡️ [Weekend 07 (Class 12 continues here)](<../../Weekend 07 - 8-9 Aug - Mastering Middleware/README.md>)

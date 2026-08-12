@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 26 July 2026 · **⏱️ Duration:** ~5 hours
 
-> 📂 **Code for this class:** [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb`](<../09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb>) (Chapter 2) · [`Langchain-Tools.ipynb`](<../09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain-Tools.ipynb>)
+> 📂 **Code for this class:** [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb`](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb>) (Chapter 2) · [`Langchain-Tools.ipynb`](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain-Tools.ipynb>)
 
 ---
 
@@ -214,7 +214,7 @@ graph TB
 
 ## ➡️ Up Next
 **[Class 11 — 1 Aug — Agents, Middleware & Memory: Giving CineBot a Mind »](<11 - 01 Aug - Agents, Middleware & Memory.md>)**
-📂 Code folder: [`11-12 - 1-8 Aug - Agents, Memory & Middleware/`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/>)
+📂 Code folder: [`11-12 - 1-8 Aug - Agents, Memory & Middleware/`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index. ⬅️ [Class 09](<09 - 25 Jul - Structured Output Mastery.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 05 overview](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>). ⬅️ [Class 09](<09 - 25 Jul - Structured Output Mastery.md>)*

@@ -57,7 +57,7 @@ result['structured_response']
 # SeatBooking(customer_name='Mayank', ticket_count=10)
 ```
 
-📖 **[Full Class 09 write-up, including `model.profile` and `Union` multi-intent tests →](<../classes_summary/09 - 25 Jul - Structured Output Mastery.md>)**
+📖 **[Full Class 09 write-up, including `model.profile` and `Union` multi-intent tests →](<../../classes_summary/09 - 25 Jul - Structured Output Mastery.md>)**
 
 ---
 
@@ -118,7 +118,7 @@ graph TB
     A --> E["preferences<br/>REAL - ToolRuntime.store"]
 ```
 
-📖 **[Full Class 10 write-up, including args_schema, reserved names & return_direct →](<../classes_summary/10 - 26 Jul - Tools Deep Dive.md>)**
+📖 **[Full Class 10 write-up, including args_schema, reserved names & return_direct →](<../../classes_summary/10 - 26 Jul - Tools Deep Dive.md>)**
 
 ---
 
@@ -134,4 +134,4 @@ graph TB
 🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing)
 
 ---
-⬅️ [Class 07-08](<../07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · [Course index](<../README.md>) · ➡️ [Class 11-12](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/README.md>)
+⬆️ [Weekend 05 overview](<../README.md>) · ⬅️ [Class 07-08](<../../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 11-12](<../../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/README.md>)

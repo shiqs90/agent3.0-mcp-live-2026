@@ -1,6 +1,6 @@
 # 🛡️ Pydantic From Scratch
 
-Standalone mini-project for **[Class 03 — Pydantic Deep Dive](<../../classes_summary/03 - 4 Jul - Pydantic Deep Dive.md>)** (4 July 2026): `BaseModel`, `Field()` constraints, `field_validator` vs. `model_validator`, and nested models, built up from an empty file.
+Standalone mini-project for **[Class 03 — Pydantic Deep Dive](<../../../classes_summary/03 - 4 Jul - Pydantic Deep Dive.md>)** (4 July 2026): `BaseModel`, `Field()` constraints, `field_validator` vs. `model_validator`, and nested models, built up from an empty file.
 
 ## Files
 

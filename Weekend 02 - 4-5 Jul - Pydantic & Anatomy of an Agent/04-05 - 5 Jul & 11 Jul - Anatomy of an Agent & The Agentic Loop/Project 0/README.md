@@ -1,6 +1,6 @@
 # Project Zero
 
-Built across **[Class 04](<../../classes_summary/04 - 5 Jul - Anatomy of an Agent.md>)** and **[Class 05](<../../classes_summary/05 - 11 Jul - The Agentic Loop.md>)** (5 & 11 July 2026) — the raw-Python agent, from first principles to a full agentic loop with a UI.
+Built across **[Class 04](<../../../classes_summary/04 - 5 Jul - Anatomy of an Agent.md>)** and **[Class 05](<../../../classes_summary/05 - 11 Jul - The Agentic Loop.md>)** (5 & 11 July 2026) — the raw-Python agent, from first principles to a full agentic loop with a UI.
 
 | File | Contents |
 |---|---|

@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 19 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb`](<../07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb>)
+> 📂 **Code for this class:** [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb`](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb>)
 
 ---
 
@@ -112,7 +112,7 @@ messages = [SystemMessage("You are a helpful assistant"), HumanMessage("Can you 
 
 ## 📝 Prompt Templates — Writing the Structure Once
 
-> 📂 Continues in [`04_05_prompt_templates_structured_output_student_notes.ipynb`](<../07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/04_05_prompt_templates_structured_output_student_notes.ipynb>)
+> 📂 Continues in [`04_05_prompt_templates_structured_output_student_notes.ipynb`](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/04_05_prompt_templates_structured_output_student_notes.ipynb>)
 
 An f-string prompt works for one case; the moment you need the same structure with different tones or multiple variables, you're rewriting it by hand every time, with no warning on a silent typo. `ChatPromptTemplate` separates the fixed structure from what actually changes:
 
@@ -185,7 +185,7 @@ Same three messy inputs, same underlying model — the only change is handing it
 
 ## ➡️ Up Next
 **[Class 09 — 25 Jul — Structured Output Mastery: Building CineBot »](<09 - 25 Jul - Structured Output Mastery.md>)**
-📂 Code folder: [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/`](<../09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/>)
+📂 Code folder: [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/`](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index. ⬅️ [Class 07](<07 - 18 Jul - LangChain Family & Harness Engineering.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 04 overview](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/README.md>). ⬅️ [Class 07](<07 - 18 Jul - LangChain Family & Harness Engineering.md>)*

@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 18 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/01_landscape_student_notes.ipynb`](<../07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/01_landscape_student_notes.ipynb>)
+> 📂 **Code for this class:** [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/01_landscape_student_notes.ipynb`](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/01_landscape_student_notes.ipynb>)
 
 ---
 
@@ -89,4 +89,4 @@ Pulled directly from the course's own FAQ notes for this session:
 **[Class 08 — 19 Jul — Inside the Model: Parameters, Streaming, Tools & Structured Output »](<08 - 19 Jul - Inside the Model.md>)**
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index. ⬅️ [Class 06](<06 - 12 Jul - Introduction to LangChain.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 04 overview](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/README.md>). ⬅️ [Class 06](<06 - 12 Jul - Introduction to LangChain.md>)*

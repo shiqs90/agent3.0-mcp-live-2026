@@ -1,7 +1,7 @@
 # 🐍 Class 01 — Python for AI: Dev Environment & Fundamentals
 **📅 27 June 2026** · Agentic AI 3.0 Specialization · Mentor: Mayank Aggarwal
 
-📖 **[Same write-up, indexed in classes_summary →](<../classes_summary/01 - 27 Jun - Python Setup & API Basics.md>)**
+📖 **[Same write-up, indexed in classes_summary →](<../../classes_summary/01 - 27 Jun - Python Setup & API Basics.md>)**
 
 ---
 
@@ -177,4 +177,4 @@ uv run currency.py
 - [ ] 🛠️ Re-run `tools.py`, then deliberately break `calculator("2 + ; DROP TABLE")` and watch it get caught
 
 ---
-⬅️ [Course index](<../README.md>) · ➡️ [Class 02-03](<../02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>)
+⬆️ [Weekend 01 overview](<../README.md>) · ⬅️ [Course index](<../../README.md>) · ➡️ [Class 02-03](<../02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>)
