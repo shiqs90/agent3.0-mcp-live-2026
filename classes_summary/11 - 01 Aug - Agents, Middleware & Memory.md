@@ -3,85 +3,176 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 1 August 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/>) — [`Agent-Middleware-Architecture.excalidraw`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) · [`MIddleware.ipynb`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>)
+> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 0–56) · [`Agent-Middleware-Architecture.excalidraw`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) — the real whiteboard, drawn live
 
 ---
 
-## 🧠 Everything So Far Was Already "Agents"
+## 🎬 CineBot's Real Toolset for This Module
 
-> *"What has actually changed over the last 4–5 years? We've just bought an artificial brain. Apart from the LLM, everything else is the same. The whole idea becomes: how do we best harness this model?"*
+The notebook defines six genuinely reusable CineBot tools that every middleware demo below runs against:
 
-Models, messages, structured output, and tools were never separate topics from agents — they're the components an agent is built from.
+```python
+@tool
+def check_showtimes(movie_title: str) -> str: ...
+@tool
+def book_seats(movie_title: str, seat_count: int) -> str:
+    """Book seats for a movie. Irreversible once confirmed."""
+    return f"Booked {seat_count} seat(s) for {movie_title}."
+@tool
+def cancel_booking(booking_id: str) -> str:
+    """Cancel an existing booking. Irreversible."""
+    return f"Booking {booking_id} cancelled."
+@tool
+def check_order_status(booking_id: str) -> str: ...
+@tool
+def get_refund_policy() -> str:
+    """Get the cinema's refund policy -- exact wording, not to be paraphrased."""
+    return "Refunds available up to 2 hours before showtime. No refunds after that."
+@tool
+def lookup_seat_map(movie_title: str, seat_number: str) -> str:
+    """Look up a specific seat -- fails if the seat number format is wrong."""
+    if not seat_number or not seat_number[0].isalpha():
+        raise ValueError(f"Malformed seat number '{seat_number}' -- expected a letter+number like 'A12'.")
+    return f"Seat {seat_number} for {movie_title}: available."
 
-## ⚖️ Not Every Tool Belongs to Every User
+cinebot_tools = [check_showtimes, book_seats, cancel_booking, check_order_status, get_refund_policy, lookup_seat_map]
+```
 
-A booking agent has a standard tool, a VIP-lounge tool, and an admin tool. Asking the user "are you a VIP?" doesn't work (everyone says yes); silently removing the tool breaks it for real VIPs.
+Note `book_seats` and `cancel_booking` are explicitly docstringed **"Irreversible"** — that word is doing real work; it's the exact property that makes them the tools worth gating with Human-in-the-Loop below.
 
-> *"A menu that reprints itself before you sit down. A VIP member sees the full menu — not because they were told 'don't order the VIP item,' but because it isn't printed on their menu at all."*
+## 🎛️ Middleware, Restated From the Real Whiteboard
 
-## 🎛️ Dynamic Tool Loading via Middleware
+The Excalidraw board drawn live in class captions the entire concept in one line: *"Middleware provides us a way to more tightly control what happens inside the agent."* Its loop diagram matches the code precisely:
 
 ```mermaid
 flowchart LR
-    A["📨 Request"] --> M1["🧵 before model"]
-    M1 --> B["🧠 Model call"]
-    B --> M2["🧵 after model"]
-    M2 --> C["🛠️ Tool call"]
+    A["📨 Request"] --> M1["before_agent"] --> M2["before_model"] --> M3["wrap_model_call"]
+    M3 --> B["🧠 Model Call"] --> M4["after_model"] --> M5["wrap_tool_call"] --> C["🛠️ Tool Executes"]
+    C --> M6["after_agent"] --> D["✅ Response"]
 
-    style M1 fill:#f59e0b,color:#fff
     style M2 fill:#f59e0b,color:#fff
+    style M4 fill:#f59e0b,color:#fff
+    style M5 fill:#f59e0b,color:#fff
+```
+
+The board also lists exactly what middleware is used for, four ways, matching the four demo categories this class and next actually build: *"Tracking agent behavior with logging, analytics, and debugging. Transforming prompts, tool selection, and output formatting. Adding retries, fallbacks, and early termination logic. Applying rate limits, guardrails, and PII detection."*
+
+## 📝 Summarization Middleware — Real Config, Real Doc Note
+
+```python
+from langchain.agents.middleware import SummarizationMiddleware
+
+agent = create_agent(
+    model="openai:gpt-5-mini",
+    tools=[save_trip_demo],
+    middleware=[
+        SummarizationMiddleware(
+            model="gpt-5.4-mini",       # a separate, often cheaper model just for condensing
+            trigger=("token", 4000),
+            keep=("messages", 10),
+        )
+    ],
+)
+```
+
+The real documentation note captured alongside it is worth keeping verbatim: *"Summarization is text-oriented context compression. It does not resize, downsample, or otherwise compress image/audio/video payloads. Recent messages retained by `keep` still include their original multimodal blocks, while older multimodal messages that are summarized are represented only by the generated text summary. For image-heavy applications, store media in a filesystem or object store and pass URLs or file references through message history."*
+
+The whiteboard's own worked example: **4k tokens** triggers → *"Summarize the same"* → **100k ----> 10k tokens**, condensing a genuinely large real conversation down to a tenth of its size.
+
+## ✋ Human-in-the-Loop — the Real Interrupt Diagram
+
+Straight from the notebook's own markdown cell, the exact flow an interrupt takes:
+
+```text
+User
+  │  "Send an email asking for leave"
+  ▼
+LLM
+  │  decides to call
+  ▼
+your_send_email_tool
+  │  requires approval
+  ▼
+INTERRUPT
+  ├── approve → send email
+  ├── edit    → modify tool arguments
+  └── reject  → don't send
 ```
 
 ```python
-def vip_gate_middleware(request):
-    is_vip = request.state.get("is_vip_member", False)
-    if not is_vip:
-        request.tools = [t for t in request.tools if t.name != "vip_lounge_booking"]
-    return request
+from langchain.agents.middleware import HumanInTheLoopMiddleware
+from langgraph.checkpoint.memory import InMemorySaver
+
+guarded_agent = create_agent(
+    model="openai:gpt-5-mini",
+    tools=cinebot_tools,
+    middleware=[
+        HumanInTheLoopMiddleware(
+            interrupt_on={"cancel_booking": {"allowed_decisions": ["approve", "edit", "reject", "respond"]}}
+        ),
+    ],
+    checkpointer=InMemorySaver(),  # REQUIRED -- HITL needs to pause and later resume
+)
 ```
 
-Plain Python `if`/`else` outside the agent can't see the agent's own live state — reading `state` at runtime is only possible from inside the agent's execution, which middleware provides. Getting this to actually read a passed-in flag correctly required defining a **custom state schema** telling the agent to track `is_vip_member` explicitly, alongside its built-in message list.
+The whiteboard frames the whole idea with a real analogy: *"HITL middleware allows us to have a human oversight when an agent is calling a tool"* — drawn as **Request ---> Brain ----> Tool**, with a human standing exactly at that last arrow, captioned simply **"Intern."** An intern with a great brain still needs sign-off before doing something irreversible — that's the entire justification for where HITL sits in the loop.
 
-## 🖐️ Headless Tools
+**Resuming a paused agent, for real:**
+```python
+resumed_result = guarded_agent.invoke(
+    Command(resume={"decisions": [{"type": "approve"}]}),
+    config=config,
+)
+```
 
-Tools whose *implementation* runs on the **user's own device** — clipboard, geolocation, payment — not the server. Definitions are registered with the agent; execution happens client-side after an interrupt/resume handshake. Same idea as browser geolocation/clipboard APIs, just triggered by an agent.
+The notebook builds this out into a genuinely interactive terminal demo, `run_interactive_hitl_demo()`, that reads a live typed decision — `approve` / `edit` / `reject` / `respond` — and applies it to the paused run in real time:
 
-## 🧳 TripMate — Real Tools, Not Mocks
+```python
+def run_interactive_hitl_demo(agent, config):
+    state = agent.get_state(config)
+    if not state.next:
+        print("Nothing is currently paused for approval.")
+        return
+    choice = input("Type 1, 2, 3, or 4: ").strip()
+    if choice == "1":
+        decision = {"type": "approve"}
+    elif choice == "2":
+        new_id = input("New booking_id to use instead: ").strip()
+        decision = {"type": "edit", "args": {"booking_id": new_id}}
+    elif choice == "3":
+        reason = input("Reason for rejecting: ").strip()
+        decision = {"type": "reject", "message": reason}
+    elif choice == "4":
+        answer = input("Your response to the agent: ").strip()
+        decision = {"type": "respond", "message": answer}
+    resumed = agent.invoke(Command(resume={"decisions": [decision]}), config=config)
+    print("Agent's final response:", resumed["messages"][-1].content)
+```
 
-A second project introduced alongside CineBot: real weather via **Open-Meteo** (free, keyless), real search via **Tavily**, and a real **SQLite** table for saving/retrieving trips — so the project survives an application restart, unlike anything held only in memory.
+> ⚙️ **From the real code walkthrough note:** *"`Command(resume={"decisions": [...]})` is how you hand a decision back to an agent that's paused mid-run. The `decisions` list has one entry per interrupted tool call (usually just one). Each decision is a dict with a `"type"` key matching one of the four options, plus whatever extra data that type needs — `edit` needs new `args`, `reject` and `respond` need a `message`, `approve` needs nothing else."*
 
-## 🕳️ The Forgetting Problem → Checkpointing
+## 🗄️ Memory — the Whiteboard's "Empty & Nothing Remembered" Demo
+
+The Excalidraw board captures this class's memory demo as a direct before/after comparison, literally labeled on the drawing: **"without in memory saver"** — `invoke → result → invoke2` → **"Empty & Nothing Remembered"** — versus **"with in memory saver"** — `invoke → result → invoke2` → *"it has all the Previous messages."* The fix is the same `InMemorySaver` + `thread_id` pattern used throughout the rest of the course:
 
 ```python
 from langgraph.checkpoint.memory import InMemorySaver
-
 checkpointer = InMemorySaver()
 agent_with_memory = create_agent(model=model, tools=[...], checkpointer=checkpointer)
-
 config = {"configurable": {"thread_id": "mayank-session-1"}}
-agent_with_memory.invoke({"messages": [...]}, config=config)
 ```
-
-`thread_id` is just a unique key the checkpointer uses to locate a conversation — the application controls it, the user never sees it directly.
-
-| Concept | For | Lifetime |
-|---|---|---|
-| **Memory saver** (checkpointer) | One conversation's history, tied to `thread_id` | Minutes to persistent |
-| **Memory store** | Facts *about a user*, usable across conversations | Persistent by design |
-| **Caching** | Avoiding repeated expensive calls | Short, tunable |
-| **Database** | General persistent app storage | Persistent |
 
 ## ✅ Action Items
 
-- [ ] 🔁 Recreate the VIP middleware example, including the state-schema bug and its fix
-- [ ] 🧵 Write middleware that filters tools based on `request.state`
-- [ ] 🌦️ Build one genuinely real tool (free public API, no key)
-- [ ] 🗄️ Confirm `InMemorySaver` + `thread_id` remembers across two `invoke()` calls, then forgets on a new `thread_id`
+- [ ] 📝 Recreate `SummarizationMiddleware` with your own `trigger`/`keep`, and watch a long conversation actually compress
+- [ ] ✋ Build the `cancel_booking` HITL demo, then run `run_interactive_hitl_demo()` yourself and try all four decision types
+- [ ] 🗄️ Reproduce the whiteboard's own before/after: two `invoke()` calls with no checkpointer, then the same two calls with `InMemorySaver()` + a fixed `thread_id`
+- [ ] 🎨 Open [`Agent-Middleware-Architecture.excalidraw`](<../11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) in [excalidraw.com](https://excalidraw.com) and trace the full loop diagram by hand
 
 ---
 
 ## ➡️ Up Next
-**[Class 12 — 8 Aug — Mastering Middleware: Control, Guardrails & HITL »](<12 - 08 Aug - Mastering Middleware.md>)**
+**[Class 12 — 8 Aug — Mastering Middleware »](<12 - 08 Aug - Mastering Middleware.md>)**
 
 ---
 *Part of the [Live-Class-2026](../README.md) class summary index. ⬅️ [Class 10](<10 - 26 Jul - Tools Deep Dive.md>)*

@@ -40,7 +40,7 @@ Open **any** class folder on GitHub and its own `README.md` renders right there 
 | 09 | 25 Jul | Structured Output Mastery (CineBot) | [notes](<classes_summary/09 - 25 Jul - Structured Output Mastery.md>) | [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/`](<09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/>) |
 | 10 | 26 Jul | Tools Deep Dive | [notes](<classes_summary/10 - 26 Jul - Tools Deep Dive.md>) | ↑ same folder |
 | 11 | 1 Aug | Agents, Middleware & Memory | [notes](<classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>) | [`11-12 - 1-8 Aug - Agents, Memory & Middleware/`](<11-12 - 1-8 Aug - Agents, Memory & Middleware/>) |
-| 12 | 8 Aug | Mastering Middleware | [notes](<classes_summary/12 - 08 Aug - Mastering Middleware.md>) | ↑ same folder |
+| 12 | 8–9 Aug | Mastering Middleware | [notes](<classes_summary/12 - 08 Aug - Mastering Middleware.md>) | ↑ same folder |
 
 > New weekends land as new dated folders + a matching file in `classes_summary/` — this table grows with the course.
 
