@@ -1,0 +1,23 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local session logs (not class content)
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+
+# Secrets — every class folder ships a `.env.example` instead
+.env
+.env.*
+!.env.example
+!*.example.env
+
+# Notebook checkpoints
+.ipynb_checkpoints/
