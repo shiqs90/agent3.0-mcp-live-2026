@@ -122,6 +122,7 @@ custom_pii_agent = create_agent(model="openai:gpt-5-mini", tools=cinebot_tools,
 | [`Agent-Middleware-Architecture.pdf`](<Agent-Middleware-Architecture.pdf>) | 11-12 | Exported, viewable version of the same diagram |
 | [`MIddleware.ipynb`](<MIddleware.ipynb>) | 11-12 | All nine built-in middlewares, worked live, 146 real cells |
 | [`Middleware-Architecture-Sketch.ipynb`](<Middleware-Architecture-Sketch.ipynb>) | 12 | Early loop-diagram sketch |
+| [`Assignment & Questions/Assignment_2_Agents_and_Prebuilt_Middleware.ipynb`](<Assignment & Questions/Assignment_2_Agents_and_Prebuilt_Middleware.ipynb>) | 11-12 | Assignment 2 — Agents & Prebuilt Middleware |
 
 🔗 Live Colab used in class: [Middleware notebook](https://colab.research.google.com/drive/1Qt9uU2HhDvtFTWwbbFBYxK86jJypv1w_?usp=sharing)
 

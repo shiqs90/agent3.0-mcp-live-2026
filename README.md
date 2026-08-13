@@ -5,6 +5,9 @@
 
 📖 **[Mayank's running notes, Colab links & escalated Q&A →](https://bugs-sleep-6uj.craft.me/agentic3)** · 📄 [Full course brochure (PDF)](<Agentic-3-0.pdf>)
 
+🧰 **New here? Start with [Prerequisites & First-Time Setup](<PREREQUISITES.md>)** — Python, UV, VS Code, and API keys, all in one place before Class 01.
+📖 **Revising a term?** Check the [Glossary](<GLOSSARY.md>) — every recurring concept, one line each, linked back to where it was first taught.
+
 ---
 
 ## 🗺️ How This Repo Is Organized

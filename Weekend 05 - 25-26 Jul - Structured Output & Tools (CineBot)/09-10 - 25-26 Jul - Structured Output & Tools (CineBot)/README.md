@@ -129,7 +129,16 @@ graph TB
 | [`Langchain_Structured_OUTPUT_COLAB.ipynb`](<Langchain_Structured_OUTPUT_COLAB.ipynb>) | 09 | CineBot structured output, `Union` intents, error recovery |
 | [`Langchain-Tools.ipynb`](<Langchain-Tools.ipynb>) | 10 | `@tool`, `args_schema`, `ToolRuntime`, memory-backed tools |
 | [`Langchain_Till_Agents.ipynb`](<Langchain_Till_Agents.ipynb>) | 09-10 | Consolidated: everything through tools |
-| [`Assignment & Questions/`](<Assignment & Questions/>) | 10 | Full chapter-by-chapter student reference + real interview questions |
+| [`Assignment & Questions/`](<Assignment & Questions/>) | 10 | Full chapter-by-chapter student reference, real interview questions, Assignment 1 + solutions |
+
+**Inside `Assignment & Questions/`:**
+
+| File | What it is |
+|---|---|
+| [`Assignment_LangChain_Fundamentals_Landscape_to_Tools.ipynb`](<Assignment & Questions/Assignment_LangChain_Fundamentals_Landscape_to_Tools.ipynb>) | Assignment 1 — LangChain Fundamentals, Landscape through Tools |
+| [`Assignment_LangChain_Fundamentals_SOLUTIONS.ipynb`](<Assignment & Questions/Assignment_LangChain_Fundamentals_SOLUTIONS.ipynb>) | Assignment 1 — worked solutions |
+| [`Student_Reference_Structured_Output_and_Tools.ipynb`](<Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb>) | Chapter 2 student reference |
+| [`LangChain_Interview_Questions_Researched.md.pdf`](<Assignment & Questions/LangChain_Interview_Questions_Researched.md.pdf>) | Real interview questions, researched |
 
 🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing)
 

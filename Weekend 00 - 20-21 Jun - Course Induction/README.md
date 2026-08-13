@@ -4,6 +4,8 @@
 
 > 📁 No code ships this weekend — it's the map before the road trip. Every folder from Weekend 01 onward is a stop on the roadmap laid out here.
 
+🧰 **Before Weekend 01:** work through [Prerequisites & First-Time Setup](<../PREREQUISITES.md>) — Python, UV, VS Code, and at least one free API key.
+
 ## 📖 This Weekend's Class
 
 | Class | Topic | Full write-up | Code |
