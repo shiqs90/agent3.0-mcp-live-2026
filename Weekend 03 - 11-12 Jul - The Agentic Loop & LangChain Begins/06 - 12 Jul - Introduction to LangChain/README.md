@@ -87,7 +87,7 @@ LangChain's own quickstart: **1)** detailed system prompt → **2)** create tool
 | [`langchain_basics.py`](<langchain_basics.py>) | The Great Gatsby research agent — grounded, checkpointed, `deepagents` previewed |
 | [`langchain_agents.py`](<langchain_agents.py>) | `get_weather` + `fetch_text_from_url`, the first working `create_agent()` |
 | [`main.py`](<main.py>) | Project entry point |
-| [`.example.env`](<.example.env>) | Provider key template — copy to `.env`, never commit the real one |
+| [`.env.example`](<.env.example>) | Provider key template — copy to `.env`, never commit the real one |
 
 ## ✅ Action Items
 

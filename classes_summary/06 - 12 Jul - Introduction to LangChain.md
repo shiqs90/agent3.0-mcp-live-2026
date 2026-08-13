@@ -110,7 +110,7 @@ LangChain's own quickstart walks through: **1)** detailed system prompt → **2)
 | [`langchain_basics.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_basics.py>) | The Great Gatsby research agent — grounded, checkpointed, `deepagents` previewed |
 | [`langchain_agents.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_agents.py>) | `get_weather` + `fetch_text_from_url`, the first working `create_agent()` |
 | [`main.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/main.py>) | Project entry point |
-| [`.example.env`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/.example.env>) | Provider key template — copy to `.env`, never commit the real one |
+| [`.env.example`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/.env.example>) | Provider key template — copy to `.env`, never commit the real one |
 
 ## ✅ Action Items
 

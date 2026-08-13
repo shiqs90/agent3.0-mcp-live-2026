@@ -109,7 +109,7 @@ Every code folder is an independent [UV](https://docs.astral.sh/uv/) project —
 ```bash
 cd "Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain"
 uv sync
-cp .example.env .env   # or .env.example, per folder — fill in at least one free key
+cp .env.example .env   # fill in at least one free key
 uv run main.py
 ```
 
