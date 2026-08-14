@@ -12,7 +12,7 @@
 
 ## 🗺️ How This Repo Is Organized
 
-The course runs **every Saturday & Sunday**, so the repo is organized the same way you attend it: one **`Weekend NN - Date - Topic/`** folder per calendar weekend, each nesting the real dated class folder(s) — code, notebooks, and Excalidraw diagrams exactly as built live. Every individual class also gets a **beautifully written summary** in [`classes_summary/`](<classes_summary/>), in the spirit of the mermaid-diagram-driven notes format the course community loves.
+The course runs **every Saturday & Sunday**, so the repo is organized the same way you attend it: one **`Weekend NN - Date(s)/`** folder per calendar weekend, each nesting the real dated class folder(s) — code, notebooks, and Excalidraw diagrams exactly as built live. Every individual class also gets a **beautifully written summary** in [`classes_summary/`](<classes_summary/>), in the spirit of the mermaid-diagram-driven notes format the course community loves.
 
 ```mermaid
 flowchart LR
@@ -33,16 +33,16 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 
 | Weekend | Date(s) | Classes | Folder |
 |---|---|---|---|
-| 00 | 21 Jun | 00 · Course Induction & Roadmap | [`Weekend 00 - 20-21 Jun - Course Induction/`](<Weekend 00 - 20-21 Jun - Course Induction/>) |
-| 01 | 27–28 Jun | 01 · Python Setup & API Basics — 02 · Python Refresher | [`Weekend 01 - 27-28 Jun - Python Setup & Refresher/`](<Weekend 01 - 27-28 Jun - Python Setup & Refresher/>) |
-| 02 | 4–5 Jul | 03 · Pydantic Deep Dive — 04 · Anatomy of an Agent | [`Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/`](<Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/>) |
-| 03 | 11–12 Jul | 05 · The Agentic Loop — 06 · Introduction to LangChain | [`Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/`](<Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/>) |
-| 04 | 18–19 Jul | 07 · LangChain Family & Harness Engineering — 08 · Inside the Model | [`Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/`](<Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/>) |
-| 05 | 25–26 Jul | 09 · Structured Output Mastery — 10 · Tools Deep Dive | [`Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/`](<Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/>) |
-| 06 | 1 Aug | 11 · Agents, Middleware & Memory | [`Weekend 06 - 1 Aug - Agents, Memory & Middleware/`](<Weekend 06 - 1 Aug - Agents, Memory & Middleware/>) |
-| 07 | 8–9 Aug | 12 · Mastering Middleware | [`Weekend 07 - 8-9 Aug - Mastering Middleware/`](<Weekend 07 - 8-9 Aug - Mastering Middleware/>) |
+| 00 | 21 Jun | 00 · Course Induction & Roadmap | [`Weekend 00 - 20-21 Jun/`](<Weekend 00 - 20-21 Jun/>) |
+| 01 | 27–28 Jun | 01 · Python Setup & API Basics — 02 · Python Refresher | [`Weekend 01 - 27-28 Jun/`](<Weekend 01 - 27-28 Jun/>) |
+| 02 | 4–5 Jul | 03 · Pydantic Deep Dive — 04 · Anatomy of an Agent | [`Weekend 02 - 4-5 Jul/`](<Weekend 02 - 4-5 Jul/>) |
+| 03 | 11–12 Jul | 05 · The Agentic Loop — 06 · Introduction to LangChain | [`Weekend 03 - 11-12 Jul/`](<Weekend 03 - 11-12 Jul/>) |
+| 04 | 18–19 Jul | 07 · LangChain Family & Harness Engineering — 08 · Inside the Model | [`Weekend 04 - 18-19 Jul/`](<Weekend 04 - 18-19 Jul/>) |
+| 05 | 25–26 Jul | 09 · Structured Output Mastery — 10 · Tools Deep Dive | [`Weekend 05 - 25-26 Jul/`](<Weekend 05 - 25-26 Jul/>) |
+| 06 | 1 Aug | 11 · Agents, Middleware & Memory | [`Weekend 06 - 1 Aug/`](<Weekend 06 - 1 Aug/>) |
+| 07 | 8–9 Aug | 12 · Mastering Middleware | [`Weekend 07 - 8-9 Aug/`](<Weekend 07 - 8-9 Aug/>) |
 
-> New weekends land as new `Weekend NN - Date - Topic/` folders — this table grows with the course.
+> New weekends land as new `Weekend NN - Date(s)/` folders — this table grows with the course.
 
 ---
 
@@ -51,17 +51,17 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 | # | Date(s) | Class | 📖 Summary | 📂 Code |
 |---|---|---|---|---|
 | 00 | 21 Jun | Course Induction & Roadmap | [notes](<classes_summary/00 - 21 Jun - Course Induction & Roadmap.md>) | — |
-| 01 | 27 Jun | Python Setup & API Basics | [notes](<classes_summary/01 - 27 Jun - Python Setup & API Basics.md>) | [`Weekend 01/01 - 27 Jun .../`](<Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/>) |
-| 02 | 28 Jun | Python Refresher | [notes](<classes_summary/02 - 28 Jun - Python Refresher.md>) | [`Weekend 01/02-03 - 28 Jun & 4 Jul .../`](<Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) |
+| 01 | 27 Jun | Python Setup & API Basics | [notes](<classes_summary/01 - 27 Jun - Python Setup & API Basics.md>) | [`Weekend 01/01 - 27 Jun .../`](<Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/>) |
+| 02 | 28 Jun | Python Refresher | [notes](<classes_summary/02 - 28 Jun - Python Refresher.md>) | [`Weekend 01/02-03 - 28 Jun & 4 Jul .../`](<Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) |
 | 03 | 4 Jul | Pydantic Deep Dive | [notes](<classes_summary/03 - 4 Jul - Pydantic Deep Dive.md>) | ↑ same folder (in Weekend 01) |
-| 04 | 5 Jul | Anatomy of an Agent | [notes](<classes_summary/04 - 5 Jul - Anatomy of an Agent.md>) | [`Weekend 02/04-05 - 5 Jul & 11 Jul .../`](<Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>) |
+| 04 | 5 Jul | Anatomy of an Agent | [notes](<classes_summary/04 - 5 Jul - Anatomy of an Agent.md>) | [`Weekend 02/04-05 - 5 Jul & 11 Jul .../`](<Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>) |
 | 05 | 11 Jul | The Agentic Loop (Pure Python) | [notes](<classes_summary/05 - 11 Jul - The Agentic Loop.md>) | ↑ same folder (in Weekend 02) |
-| 06 | 12 Jul | Introduction to LangChain | [notes](<classes_summary/06 - 12 Jul - Introduction to LangChain.md>) | [`Weekend 03/06 - 12 Jul .../`](<Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/>) |
-| 07 | 18 Jul | LangChain Family & Harness Engineering | [notes](<classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>) | [`Weekend 04/07-08 - 18-19 Jul .../`](<Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/>) |
+| 06 | 12 Jul | Introduction to LangChain | [notes](<classes_summary/06 - 12 Jul - Introduction to LangChain.md>) | [`Weekend 03/06 - 12 Jul .../`](<Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/>) |
+| 07 | 18 Jul | LangChain Family & Harness Engineering | [notes](<classes_summary/07 - 18 Jul - LangChain Family & Harness Engineering.md>) | [`Weekend 04/07-08 - 18-19 Jul .../`](<Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/>) |
 | 08 | 19 Jul | Inside the Model (Params, Streaming, Tools, Structured Output) | [notes](<classes_summary/08 - 19 Jul - Inside the Model.md>) | ↑ same folder |
-| 09 | 25 Jul | Structured Output Mastery (CineBot) | [notes](<classes_summary/09 - 25 Jul - Structured Output Mastery.md>) | [`Weekend 05/09-10 - 25-26 Jul .../`](<Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/>) |
+| 09 | 25 Jul | Structured Output Mastery (CineBot) | [notes](<classes_summary/09 - 25 Jul - Structured Output Mastery.md>) | [`Weekend 05/09-10 - 25-26 Jul .../`](<Weekend 05 - 25-26 Jul/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/>) |
 | 10 | 26 Jul | Tools Deep Dive | [notes](<classes_summary/10 - 26 Jul - Tools Deep Dive.md>) | ↑ same folder |
-| 11 | 1 Aug | Agents, Middleware & Memory | [notes](<classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>) | [`Weekend 06/11-12 - 1-8 Aug .../`](<Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/>) |
+| 11 | 1 Aug | Agents, Middleware & Memory | [notes](<classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>) | [`Weekend 06/11-12 - 1-8 Aug .../`](<Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/>) |
 | 12 | 8–9 Aug | Mastering Middleware | [notes](<classes_summary/12 - 08 Aug - Mastering Middleware.md>) | ↑ same folder (in Weekend 06) |
 
 > New weekends land as new `Weekend NN/` folders + a matching file in `classes_summary/` — this table grows with the course.
@@ -110,7 +110,7 @@ This repository currently covers **Phase 0 through the middle of Phase 2** (Clas
 Every code folder is an independent [UV](https://docs.astral.sh/uv/) project — `cd` into the dated class folder *inside* its `Weekend NN/` parent:
 
 ```bash
-cd "Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain"
+cd "Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain"
 uv sync
 cp .env.example .env   # fill in at least one free key
 uv run main.py

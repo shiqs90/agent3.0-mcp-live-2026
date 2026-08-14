@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 5 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/>) — files `_01`–`_04`, the start of **Project Zero**
+> 📂 **Code for this class:** [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/>) — files `_01`–`_04`, the start of **Project Zero**
 
 ---
 
@@ -13,7 +13,7 @@ Every AI call — ChatGPT, Claude, an API request — gives an input and gets an
 
 ## 🪜 Model → Chatbot → Agent, in Actual Code
 
-[`_01_ai_model_vs_chatbot_vs_agent.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_01_ai_model_vs_chatbot_vs_agent.py>) draws all three as real Python — deliberately with **no API calls yet**, so the structural difference is visible without any network noise:
+[`_01_ai_model_vs_chatbot_vs_agent.py`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_01_ai_model_vs_chatbot_vs_agent.py>) draws all three as real Python — deliberately with **no API calls yet**, so the structural difference is visible without any network noise:
 
 ```python
 def ai_model(question: str) -> str:
@@ -70,7 +70,7 @@ flowchart TD
 
 ## 🔌 Calling a Real Model — Four Providers, One Shape
 
-[`_02_calling_the_ai_paid_and_free.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_02_calling_the_ai_paid_and_free.py>) puts all four providers side by side, so the differences (and the one real exception) are visible in one file:
+[`_02_calling_the_ai_paid_and_free.py`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_02_calling_the_ai_paid_and_free.py>) puts all four providers side by side, so the differences (and the one real exception) are visible in one file:
 
 ```python
 def ask_openai(question: str) -> str:
@@ -104,7 +104,7 @@ def ask_groq(question: str) -> str:
 
 ## 📐 Structuring the Reply With Pydantic
 
-[`_03_structuring_with_pydantic.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_03_structuring_with_pydantic.py>) asks the model to reply with **only** a JSON object, then validates it before trusting a single field:
+[`_03_structuring_with_pydantic.py`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_03_structuring_with_pydantic.py>) asks the model to reply with **only** a JSON object, then validates it before trusting a single field:
 
 ```python
 class WeatherQuestion(BaseModel):
@@ -128,7 +128,7 @@ def extract_weather_question(user_message: str) -> WeatherQuestion | str:
 
 ## 🛠️ Giving It a Tool — Manually
 
-[`_04_giving_it_a_tool.py`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_04_giving_it_a_tool.py>) chains the extraction above straight into a real tool call — but **we** decide to call it, not the model:
+[`_04_giving_it_a_tool.py`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/Project 0/_04_giving_it_a_tool.py>) chains the extraction above straight into a real tool call — but **we** decide to call it, not the model:
 
 ```python
 def answer_weather_question(user_message: str) -> str:
@@ -156,4 +156,4 @@ That's the exact gap Class 05 closes: letting the *model itself* decide when to 
 **[Class 05 — 11 Jul — The Agentic Loop (Pure Python) »](<05 - 11 Jul - The Agentic Loop.md>)**
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 02 overview](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/README.md>). ⬅️ [Class 03](<03 - 4 Jul - Pydantic Deep Dive.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 02 overview](<../Weekend 02 - 4-5 Jul/README.md>). ⬅️ [Class 03](<03 - 4 Jul - Pydantic Deep Dive.md>)*

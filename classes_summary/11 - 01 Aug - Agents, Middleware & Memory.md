@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 1 August 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 0–56) · [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) — the real whiteboard, drawn live
+> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 0–56) · [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) — the real whiteboard, drawn live
 
 ---
 
@@ -167,7 +167,7 @@ config = {"configurable": {"thread_id": "mayank-session-1"}}
 - [ ] 📝 Recreate `SummarizationMiddleware` with your own `trigger`/`keep`, and watch a long conversation actually compress
 - [ ] ✋ Build the `cancel_booking` HITL demo, then run `run_interactive_hitl_demo()` yourself and try all four decision types
 - [ ] 🗄️ Reproduce the whiteboard's own before/after: two `invoke()` calls with no checkpointer, then the same two calls with `InMemorySaver()` + a fixed `thread_id`
-- [ ] 🎨 Open [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) in [excalidraw.com](https://excalidraw.com) and trace the full loop diagram by hand
+- [ ] 🎨 Open [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) in [excalidraw.com](https://excalidraw.com) and trace the full loop diagram by hand
 
 ---
 
@@ -175,4 +175,4 @@ config = {"configurable": {"thread_id": "mayank-session-1"}}
 **[Class 12 — 8 Aug — Mastering Middleware »](<12 - 08 Aug - Mastering Middleware.md>)**
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 06 overview](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/README.md>). ⬅️ [Class 10](<10 - 26 Jul - Tools Deep Dive.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 06 overview](<../Weekend 06 - 1 Aug/README.md>). ⬅️ [Class 10](<10 - 26 Jul - Tools Deep Dive.md>)*

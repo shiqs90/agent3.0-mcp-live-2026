@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 12 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`06 - 12 Jul - Introduction to LangChain/`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/>)
+> 📂 **Code for this class:** [`06 - 12 Jul - Introduction to LangChain/`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/>)
 
 ---
 
@@ -24,7 +24,7 @@ flowchart TD
 
 ## ⚡ `create_agent()` — Real Code, Two Ways
 
-[`langchain_agents.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_agents.py>) is the first working `create_agent()` call in the repo — a plain mock tool plus a genuinely useful one, a URL fetcher:
+[`langchain_agents.py`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/langchain_agents.py>) is the first working `create_agent()` call in the repo — a plain mock tool plus a genuinely useful one, a URL fetcher:
 
 ```python
 from langchain.agents import create_agent
@@ -58,7 +58,7 @@ print(result["messages"][-1].content_blocks)
 
 ## 📖 A Real Research Agent — The Great Gatsby
 
-[`langchain_basics.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_basics.py>) takes the same `fetch_text_from_url` tool and points it at a genuinely non-trivial task: a literary research agent that has to *ground* every claim in tool output, not guess:
+[`langchain_basics.py`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/langchain_basics.py>) takes the same `fetch_text_from_url` tool and points it at a genuinely non-trivial task: a literary research agent that has to *ground* every claim in tool output, not guess:
 
 ```python
 SYSTEM_PROMPT = """You are a literary data assistant.
@@ -107,10 +107,10 @@ LangChain's own quickstart walks through: **1)** detailed system prompt → **2)
 
 | File | Covers |
 |---|---|
-| [`langchain_basics.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_basics.py>) | The Great Gatsby research agent — grounded, checkpointed, `deepagents` previewed |
-| [`langchain_agents.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/langchain_agents.py>) | `get_weather` + `fetch_text_from_url`, the first working `create_agent()` |
-| [`main.py`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/main.py>) | Project entry point |
-| [`.env.example`](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/.env.example>) | Provider key template — copy to `.env`, never commit the real one |
+| [`langchain_basics.py`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/langchain_basics.py>) | The Great Gatsby research agent — grounded, checkpointed, `deepagents` previewed |
+| [`langchain_agents.py`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/langchain_agents.py>) | `get_weather` + `fetch_text_from_url`, the first working `create_agent()` |
+| [`main.py`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/main.py>) | Project entry point |
+| [`.env.example`](<../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/.env.example>) | Provider key template — copy to `.env`, never commit the real one |
 
 ## ✅ Action Items
 
@@ -123,7 +123,7 @@ LangChain's own quickstart walks through: **1)** detailed system prompt → **2)
 
 ## ➡️ Up Next
 **[Class 07 — 18 Jul — LangChain Family, Harness Engineering & First Models »](<07 - 18 Jul - LangChain Family & Harness Engineering.md>)**
-📂 Code folder: [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/`](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/>)
+📂 Code folder: [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/`](<../Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 03 overview](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/README.md>). ⬅️ [Class 05](<05 - 11 Jul - The Agentic Loop.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 03 overview](<../Weekend 03 - 11-12 Jul/README.md>). ⬅️ [Class 05](<05 - 11 Jul - The Agentic Loop.md>)*

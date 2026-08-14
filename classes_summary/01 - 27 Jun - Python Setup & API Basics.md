@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 27 June 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`01 - 27 Jun - Python Setup & API Basics/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/>)
+> 📂 **Code for this class:** [`01 - 27 Jun - Python Setup & API Basics/`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/>)
 
 ---
 
@@ -22,7 +22,7 @@ flowchart LR
     style F fill:#6366f1,color:#fff
 ```
 
-**Why UV, not pip + venv + conda?** One fast tool replaces the juggling act. `uv init` scaffolds a project with its own `pyproject.toml` — the exact Python version and dependency list any teammate's machine can reproduce, the same role `package.json` plays in Node. The real starter project shipped this class, [`my-first-project/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/my-first-project/>), is exactly that scaffold — `pyproject.toml`, `uv.lock`, `.python-version`, and a `main.py` doing nothing more than proving the wiring works:
+**Why UV, not pip + venv + conda?** One fast tool replaces the juggling act. `uv init` scaffolds a project with its own `pyproject.toml` — the exact Python version and dependency list any teammate's machine can reproduce, the same role `package.json` plays in Node. The real starter project shipped this class, [`my-first-project/`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/my-first-project/>), is exactly that scaffold — `pyproject.toml`, `uv.lock`, `.python-version`, and a `main.py` doing nothing more than proving the wiring works:
 
 ```python
 def main():
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 ## 🐍 Python Fundamentals — Framed as Agent Vocabulary From Day One
 
-The real teaching file, [`Python_foundamentals.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/Python_foundamentals.py>), doesn't teach variables and types as an abstract exercise — every line is captioned with the exact agent concept it becomes later:
+The real teaching file, [`Python_foundamentals.py`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/Python_foundamentals.py>), doesn't teach variables and types as an abstract exercise — every line is captioned with the exact agent concept it becomes later:
 
 ```python
 city = "Tokyo"                    # str   -- this is what a tool ARGUMENT looks like
@@ -75,7 +75,7 @@ sequenceDiagram
     API-->>You: Response
 ```
 
-The live demo, [`currency.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/currency.py>), builds exactly this against a real, free, key-free currency API:
+The live demo, [`currency.py`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/currency.py>), builds exactly this against a real, free, key-free currency API:
 
 ```python
 import requests
@@ -96,7 +96,7 @@ except requests.exceptions.RequestException as e:
 
 This is the same shape every LLM call (OpenAI, Anthropic, Groq...) will take for the rest of the course — send a request, get structured data back, handle the case where it fails.
 
-## 🛠️ The First Hint of "Tools" — [`functions or tools.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/functions or tools.py>)
+## 🛠️ The First Hint of "Tools" — [`functions or tools.py`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/functions or tools.py>)
 
 Two plain functions, written with nothing but a docstring and a return value — no framework, no decorator, no AI import in sight yet:
 
@@ -118,7 +118,7 @@ def get_weather(city: str) -> str:
     return fake_weather_data.get(city.lower(), f"No weather data for {city!r}")
 ```
 
-[`tools.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics/tools.py>) then takes this one step further, wrapping both functions in a hand-built `@tool` decorator that times every call and registers it in a `TOOL_REGISTRY` dict — a full year before "tool calling" is ever named, the shape is already sitting on screen:
+[`tools.py`](<../Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics/tools.py>) then takes this one step further, wrapping both functions in a hand-built `@tool` decorator that times every call and registers it in a `TOOL_REGISTRY` dict — a full year before "tool calling" is ever named, the shape is already sitting on screen:
 
 ```python
 TOOL_REGISTRY: dict[str, Callable] = {}
@@ -164,7 +164,7 @@ This is the entire spine of the course's first phase: fundamentals in raw Python
 
 ## ➡️ Up Next
 **[Class 02 — 28 Jun — Python Refresher »](<02 - 28 Jun - Python Refresher.md>)**
-📂 Code folder: [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>)
+📂 Code folder: [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 01 overview](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/README.md>). ⬅️ [Class 00](<00 - 21 Jun - Course Induction & Roadmap.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 01 overview](<../Weekend 01 - 27-28 Jun/README.md>). ⬅️ [Class 00](<00 - 21 Jun - Course Induction & Roadmap.md>)*

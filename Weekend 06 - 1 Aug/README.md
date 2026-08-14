@@ -19,8 +19,8 @@ flowchart LR
 
 The real whiteboard drawn live this class — 93 labeled elements, [`Agent-Middleware-Architecture.excalidraw`](<11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>) — lays out the before/after of adding an in-memory saver ("Empty & Nothing Remembered" vs. "it has all the Previous messages") and introduces summarization as context compression: **4k tokens** triggers a squeeze from **100k → 10k tokens**.
 
-> ℹ️ **Shared code folder:** `11-12 - 1-8 Aug - Agents, Memory & Middleware/` holds both Class 11 (this weekend) and Class 12 (Weekend 07, 8–9 Aug) — one continuous notebook. It lives here where it started; [Weekend 07](<../Weekend 07 - 8-9 Aug - Mastering Middleware/README.md>) links back to it for Class 12.
+> ℹ️ **Shared code folder:** `11-12 - 1-8 Aug - Agents, Memory & Middleware/` holds both Class 11 (this weekend) and Class 12 (Weekend 07, 8–9 Aug) — one continuous notebook. It lives here where it started; [Weekend 07](<../Weekend 07 - 8-9 Aug/README.md>) links back to it for Class 12.
 
 ## 🔁 Weekend Navigation
 
-⬅️ [Weekend 05 — 25-26 Jul](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 07 — 8-9 Aug](<../Weekend 07 - 8-9 Aug - Mastering Middleware/README.md>)
+⬅️ [Weekend 05 — 25-26 Jul](<../Weekend 05 - 25-26 Jul/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 07 — 8-9 Aug](<../Weekend 07 - 8-9 Aug/README.md>)

@@ -143,4 +143,4 @@ graph TB
 🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing)
 
 ---
-⬆️ [Weekend 05 overview](<../README.md>) · ⬅️ [Class 07-08](<../../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 11-12](<../../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/README.md>)
+⬆️ [Weekend 05 overview](<../README.md>) · ⬅️ [Class 07-08](<../../Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 11-12](<../../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/README.md>)

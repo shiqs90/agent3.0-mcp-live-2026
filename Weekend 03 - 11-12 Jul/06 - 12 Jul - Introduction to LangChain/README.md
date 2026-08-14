@@ -9,7 +9,7 @@ flowchart LR
 
 > *"If ChatGPT told you 'go search Google yourself and paste the results back to me' — would that be useful? The whole point of an agent is that IT calls the tool, not you."*
 
-This session opens by finishing the raw-Python agent from [Class 05](<../../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>), then hands the exact same loop over to LangChain's `create_agent()` — the first framework of the course.
+This session opens by finishing the raw-Python agent from [Class 05](<../../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>), then hands the exact same loop over to LangChain's `create_agent()` — the first framework of the course.
 
 ## ⚡ `create_agent()` — Real Code, Two Ways
 
@@ -97,4 +97,4 @@ LangChain's own quickstart: **1)** detailed system prompt → **2)** create tool
 - [ ] ⚡ Print `result["messages"]` from `langchain_agents.py` and map each message back to Class 05's hand-built loop
 
 ---
-⬆️ [Weekend 03 overview](<../README.md>) · ⬅️ [Class 04-05](<../../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 07-08](<../../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>)
+⬆️ [Weekend 03 overview](<../README.md>) · ⬅️ [Class 04-05](<../../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 07-08](<../../Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>)

@@ -150,4 +150,4 @@ if user_input:
 See [`Project 0/README.md`](<Project 0/README.md>) for setup and run instructions.
 
 ---
-⬆️ [Weekend 02 overview](<../README.md>) · ⬅️ [Class 02-03](<../../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 06](<../../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/06 - 12 Jul - Introduction to LangChain/README.md>)
+⬆️ [Weekend 02 overview](<../README.md>) · ⬅️ [Class 02-03](<../../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 06](<../../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/README.md>)

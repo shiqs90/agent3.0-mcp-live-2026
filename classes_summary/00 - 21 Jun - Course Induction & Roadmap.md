@@ -65,4 +65,4 @@ This repository tracks the journey from **S1 → S2** onward — every class fol
 📂 Code folder: *(none this session — environment setup begins Class 01)*
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 00 overview](<../Weekend 00 - 20-21 Jun - Course Induction/README.md>).*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 00 overview](<../Weekend 00 - 20-21 Jun/README.md>).*

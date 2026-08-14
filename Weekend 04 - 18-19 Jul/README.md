@@ -22,4 +22,4 @@ Class 07 answers "why not just learn LangGraph directly?" — `create_agent` hid
 
 ## 🔁 Weekend Navigation
 
-⬅️ [Weekend 03 — 11-12 Jul](<../Weekend 03 - 11-12 Jul - The Agentic Loop & LangChain Begins/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 05 — 25-26 Jul](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>)
+⬅️ [Weekend 03 — 11-12 Jul](<../Weekend 03 - 11-12 Jul/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 05 — 25-26 Jul](<../Weekend 05 - 25-26 Jul/README.md>)

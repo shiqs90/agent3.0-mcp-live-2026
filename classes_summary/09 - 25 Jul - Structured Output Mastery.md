@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 25 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb`](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb>) — the real, executed Colab notebook, cells reproduced verbatim below
+> 📂 **Code for this class:** [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb`](<../Weekend 05 - 25-26 Jul/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb>) — the real, executed Colab notebook, cells reproduced verbatim below
 
 ---
 
@@ -195,4 +195,4 @@ Two turns, zero manual error-handling code, and the schema's own constraint held
 **[Class 10 — 26 Jul — Tools Deep Dive: Giving CineBot Hands »](<10 - 26 Jul - Tools Deep Dive.md>)**
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 05 overview](<../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>). ⬅️ [Class 08](<08 - 19 Jul - Inside the Model.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 05 overview](<../Weekend 05 - 25-26 Jul/README.md>). ⬅️ [Class 08](<08 - 19 Jul - Inside the Model.md>)*

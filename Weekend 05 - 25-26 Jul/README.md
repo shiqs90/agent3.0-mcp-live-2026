@@ -22,4 +22,4 @@ Class 09 forces every CineBot reply through Pydantic schemas — `model.profile`
 
 ## 🔁 Weekend Navigation
 
-⬅️ [Weekend 04 — 18-19 Jul](<../Weekend 04 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 06 — 1 Aug](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/README.md>)
+⬅️ [Weekend 04 — 18-19 Jul](<../Weekend 04 - 18-19 Jul/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 06 — 1 Aug](<../Weekend 06 - 1 Aug/README.md>)

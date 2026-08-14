@@ -48,7 +48,7 @@ You only need **one** to get started — Groq is the fastest to sign up for.
 Every folder with code ships a `.env.example` template. Never edit that file directly — copy it:
 
 ```bash
-cd "Weekend 01 - 27-28 Jun - Python Setup & Refresher/01 - 27 Jun - Python Setup & API Basics"
+cd "Weekend 01 - 27-28 Jun/01 - 27 Jun - Python Setup & API Basics"
 uv sync
 cp .env.example .env
 # open .env and paste in at least one real key, e.g.:
@@ -68,4 +68,4 @@ uv run main.py
 
 ---
 
-⬆️ [Course index](<README.md>) · ➡️ [Weekend 00 — Induction](<Weekend 00 - 20-21 Jun - Course Induction/README.md>)
+⬆️ [Course index](<README.md>) · ➡️ [Weekend 00 — Induction](<Weekend 00 - 20-21 Jun/README.md>)

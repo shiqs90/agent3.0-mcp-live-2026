@@ -3,7 +3,7 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 8–9 August 2026 · **⏱️ Duration:** ~4.5 hours (the notebook's own cells mark a real "9th August" continuation mid-session)
 
-> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 57–end) · [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug - Agents, Memory & Middleware/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>)
+> 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 57–end) · [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>)
 
 ---
 
@@ -218,4 +218,4 @@ A **guardrail** is the concept — the goal of protecting an agent from doing so
 New sessions land every weekend — check the [root README](../README.md) for the live index as new class folders and summaries are added.
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 07 overview](<../Weekend 07 - 8-9 Aug - Mastering Middleware/README.md>). ⬅️ [Class 11](<11 - 01 Aug - Agents, Middleware & Memory.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 07 overview](<../Weekend 07 - 8-9 Aug/README.md>). ⬅️ [Class 11](<11 - 01 Aug - Agents, Middleware & Memory.md>)*

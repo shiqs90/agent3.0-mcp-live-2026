@@ -3,13 +3,13 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 4 July 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) — files `_5`–`_10` and the standalone [`8_Pydantic/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/8_Pydantic/>) mini-project
+> 📂 **Code for this class:** [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) — files `_5`–`_10` and the standalone [`8_Pydantic/`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/8_Pydantic/>) mini-project
 
 ---
 
 ## 😩 The Problem, Stated in Code First
 
-[`_8_pydantic_with_ai.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_8_pydantic_with_ai.py>) opens not with a definition, but with the actual failure mode Pydantic exists to catch — a realistic messy LLM reply:
+[`_8_pydantic_with_ai.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_8_pydantic_with_ai.py>) opens not with a definition, but with the actual failure mode Pydantic exists to catch — a realistic messy LLM reply:
 
 ```python
 print("=== The problem ===")
@@ -117,13 +117,13 @@ flowchart LR
 
 | File | Covers |
 |---|---|
-| [`_5_calling_a_real_api.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_5_calling_a_real_api.py>) | The Frankfurter currency API, wrapped in a reusable function with `_3`'s error handling |
-| [`_6_fake_ai_call.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_6_fake_ai_call.py>) | A zero-dependency stand-in shaped exactly like a real OpenAI-style client — `.chat.completions.create(...).choices[0].message.content` |
-| [`_7_ai_call_free_and_paid.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_7_ai_call_free_and_paid.py>) | Real calls across Groq, OpenRouter (`model="openrouter/free"`, auto-routes so it never goes stale), and OpenAI |
-| [`_8_pydantic_with_ai.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_8_pydantic_with_ai.py>) | Everything above — the full Pydantic walkthrough |
-| [`_9_api_call_with_structure.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_9_api_call_with_structure.py>) | File `_5`'s API, now Pydantic-validated |
-| [`_10_tool_with_ai_call.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_10_tool_with_ai_call.py>) | The `@tool` decorator applied for real: a validated `convert_currency` tool sitting *next to* — but not yet wired into — a real AI call |
-| [`8_Pydantic/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/8_Pydantic/>) | Standalone from-scratch Pydantic mini-project (`BaseModel`, `EmailStr`, typed lists/dicts) |
+| [`_5_calling_a_real_api.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_5_calling_a_real_api.py>) | The Frankfurter currency API, wrapped in a reusable function with `_3`'s error handling |
+| [`_6_fake_ai_call.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_6_fake_ai_call.py>) | A zero-dependency stand-in shaped exactly like a real OpenAI-style client — `.chat.completions.create(...).choices[0].message.content` |
+| [`_7_ai_call_free_and_paid.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_7_ai_call_free_and_paid.py>) | Real calls across Groq, OpenRouter (`model="openrouter/free"`, auto-routes so it never goes stale), and OpenAI |
+| [`_8_pydantic_with_ai.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_8_pydantic_with_ai.py>) | Everything above — the full Pydantic walkthrough |
+| [`_9_api_call_with_structure.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_9_api_call_with_structure.py>) | File `_5`'s API, now Pydantic-validated |
+| [`_10_tool_with_ai_call.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_10_tool_with_ai_call.py>) | The `@tool` decorator applied for real: a validated `convert_currency` tool sitting *next to* — but not yet wired into — a real AI call |
+| [`8_Pydantic/`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/8_Pydantic/>) | Standalone from-scratch Pydantic mini-project (`BaseModel`, `EmailStr`, typed lists/dicts) |
 
 ## ✅ Action Items
 
@@ -137,7 +137,7 @@ flowchart LR
 
 ## ➡️ Up Next
 **[Class 04 — 5 Jul — Anatomy of an Agent »](<04 - 5 Jul - Anatomy of an Agent.md>)**
-📂 Code folder: [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/`](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>)
+📂 Code folder: [`04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/`](<../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/>)
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 02 overview](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/README.md>). ⬅️ [Class 02](<02 - 28 Jun - Python Refresher.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 02 overview](<../Weekend 02 - 4-5 Jul/README.md>). ⬅️ [Class 02](<02 - 28 Jun - Python Refresher.md>)*

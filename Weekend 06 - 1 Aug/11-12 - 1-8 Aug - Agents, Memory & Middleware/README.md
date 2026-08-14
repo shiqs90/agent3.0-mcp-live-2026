@@ -127,4 +127,4 @@ custom_pii_agent = create_agent(model="openai:gpt-5-mini", tools=cinebot_tools,
 🔗 Live Colab used in class: [Middleware notebook](https://colab.research.google.com/drive/1Qt9uU2HhDvtFTWwbbFBYxK86jJypv1w_?usp=sharing)
 
 ---
-⬆️ [Weekend 06 overview](<../README.md>) · ⬅️ [Class 09-10](<../../Weekend 05 - 25-26 Jul - Structured Output & Tools (CineBot)/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>) · [Course index](<../../README.md>) · ➡️ [Weekend 07 (Class 12 continues here)](<../../Weekend 07 - 8-9 Aug - Mastering Middleware/README.md>)
+⬆️ [Weekend 06 overview](<../README.md>) · ⬅️ [Class 09-10](<../../Weekend 05 - 25-26 Jul/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>) · [Course index](<../../README.md>) · ➡️ [Weekend 07 (Class 12 continues here)](<../../Weekend 07 - 8-9 Aug/README.md>)

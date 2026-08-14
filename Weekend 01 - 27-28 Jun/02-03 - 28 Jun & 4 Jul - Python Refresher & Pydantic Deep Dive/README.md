@@ -242,4 +242,4 @@ Files `_5`, `_7`, `_9`, `_10`, `_12`, `_13`, `_14` make real network calls (Fran
 If you can't point to which earlier file taught a pattern reused later, that pattern doesn't belong here yet.
 
 ---
-⬆️ [Weekend 01 overview](<../README.md>) · ⬅️ [Class 01](<../01 - 27 Jun - Python Setup & API Basics/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 04-05](<../../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>)
+⬆️ [Weekend 01 overview](<../README.md>) · ⬅️ [Class 01](<../01 - 27 Jun - Python Setup & API Basics/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 04-05](<../../Weekend 02 - 4-5 Jul/04-05 - 5 Jul & 11 Jul - Anatomy of an Agent & The Agentic Loop/README.md>)

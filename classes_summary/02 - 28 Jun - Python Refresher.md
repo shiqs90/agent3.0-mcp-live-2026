@@ -3,13 +3,13 @@
 
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 28 June 2026 · **⏱️ Duration:** ~4.5 hours
 
-> 📂 **Code for this class:** [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) — files `_0` through `_4`, an expanded 15-file codebase that carries this same numbering all the way through Class 05's agent-with-memory
+> 📂 **Code for this class:** [`02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/>) — files `_0` through `_4`, an expanded 15-file codebase that carries this same numbering all the way through Class 05's agent-with-memory
 
 ---
 
 ## 🏛️ Object-Oriented Python — The Bank Account Example
 
-The real file, [`_2_oop_classes.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_2_oop_classes.py>), opens with a comment that sets up the entire class's arc: *"Class 1 only ever showed you a class wearing an 'Agent' costume; this file is the bare pattern, on its own, so it actually generalizes."*
+The real file, [`_2_oop_classes.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_2_oop_classes.py>), opens with a comment that sets up the entire class's arc: *"Class 1 only ever showed you a class wearing an 'Agent' costume; this file is the bare pattern, on its own, so it actually generalizes."*
 
 ```python
 class BankAccount:
@@ -64,7 +64,7 @@ my_book.read(40)
 
 ## 🎁 Decorators — Wrapping Without Changing
 
-[`_4_decorators.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_4_decorators.py>) builds two decorators, then stacks them:
+[`_4_decorators.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_4_decorators.py>) builds two decorators, then stacks them:
 
 ```python
 import functools, time
@@ -116,11 +116,11 @@ flowchart TD
 
 | File | Covers |
 |---|---|
-| [`_0_basics_refresher.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_0_basics_refresher.py>) | Quick Class 01 recap — variables, f-strings, `if`/`elif`/`else` |
-| [`_1_data_structures.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_1_data_structures.py>) | Lists, tuple unpacking, dicts, and the pattern that matters most later: a **list of dicts** |
-| [`_2_oop_classes.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_2_oop_classes.py>) | `BankAccount`, `Book` — plain classes, then the `@dataclass` shortcut |
-| [`_3_error_handling.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_3_error_handling.py>) | `try`/`except`/`finally`, multiple exception types, tied back to a missing dict key |
-| [`_4_decorators.py`](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_4_decorators.py>) | The wrapper pattern, generic, then stacked (`@announce` `@timed`) |
+| [`_0_basics_refresher.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_0_basics_refresher.py>) | Quick Class 01 recap — variables, f-strings, `if`/`elif`/`else` |
+| [`_1_data_structures.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_1_data_structures.py>) | Lists, tuple unpacking, dicts, and the pattern that matters most later: a **list of dicts** |
+| [`_2_oop_classes.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_2_oop_classes.py>) | `BankAccount`, `Book` — plain classes, then the `@dataclass` shortcut |
+| [`_3_error_handling.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_3_error_handling.py>) | `try`/`except`/`finally`, multiple exception types, tied back to a missing dict key |
+| [`_4_decorators.py`](<../Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/_4_decorators.py>) | The wrapper pattern, generic, then stacked (`@announce` `@timed`) |
 
 ## ✅ Action Items
 
@@ -135,4 +135,4 @@ flowchart TD
 **[Class 03 — 4 Jul — Pydantic Deep Dive »](<03 - 4 Jul - Pydantic Deep Dive.md>)**
 
 ---
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 01 overview](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/README.md>). ⬅️ [Class 01](<01 - 27 Jun - Python Setup & API Basics.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 01 overview](<../Weekend 01 - 27-28 Jun/README.md>). ⬅️ [Class 01](<01 - 27 Jun - Python Setup & API Basics.md>)*

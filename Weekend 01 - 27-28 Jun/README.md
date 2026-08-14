@@ -22,8 +22,8 @@ flowchart LR
 
 Class 01 gets the dev environment sorted — UV, VS Code, `.env` hygiene — then teaches Python fundamentals with every variable and function captioned as the agent concept it becomes later. Class 02 picks the pace up into real OOP, decorators, and error handling, laying the groundwork for why Pydantic (Class 03, next weekend) becomes necessary the moment you can't trust a plain `dict`.
 
-> ℹ️ **Shared code folder:** `02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/` holds both Class 02 (this weekend) and Class 03 (Weekend 02, 4 Jul) — the two sessions build one continuous codebase, so the folder lives here where it started. [Weekend 02](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/README.md>) links back to it for Class 03.
+> ℹ️ **Shared code folder:** `02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/` holds both Class 02 (this weekend) and Class 03 (Weekend 02, 4 Jul) — the two sessions build one continuous codebase, so the folder lives here where it started. [Weekend 02](<../Weekend 02 - 4-5 Jul/README.md>) links back to it for Class 03.
 
 ## 🔁 Weekend Navigation
 
-⬅️ [Weekend 00 — Induction](<../Weekend 00 - 20-21 Jun - Course Induction/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 02 — 4-5 Jul](<../Weekend 02 - 4-5 Jul - Pydantic & Anatomy of an Agent/README.md>)
+⬅️ [Weekend 00 — Induction](<../Weekend 00 - 20-21 Jun/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 02 — 4-5 Jul](<../Weekend 02 - 4-5 Jul/README.md>)

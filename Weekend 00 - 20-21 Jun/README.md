@@ -16,4 +16,4 @@ Krish Naik (Founder) and Mayank Aggarwal (Lead Mentor) open the course by placin
 
 ## 🔁 Weekend Navigation
 
-⬆️ [Course index](<../README.md>) · ➡️ [Weekend 01 — 27-28 Jun](<../Weekend 01 - 27-28 Jun - Python Setup & Refresher/README.md>)
+⬆️ [Course index](<../README.md>) · ➡️ [Weekend 01 — 27-28 Jun](<../Weekend 01 - 27-28 Jun/README.md>)
