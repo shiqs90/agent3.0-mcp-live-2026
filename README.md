@@ -40,7 +40,9 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 | 04 | 18–19 Jul | 07 · LangChain Family & Harness Engineering — 08 · Inside the Model | [`Weekend 04 - 18-19 Jul/`](<Weekend 04 - 18-19 Jul/>) |
 | 05 | 25–26 Jul | 09 · Structured Output Mastery — 10 · Tools Deep Dive | [`Weekend 05 - 25-26 Jul/`](<Weekend 05 - 25-26 Jul/>) |
 | 06 | 1 Aug | 11 · Agents, Middleware & Memory | [`Weekend 06 - 1 Aug/`](<Weekend 06 - 1 Aug/>) |
-| 07 | 8–9 Aug | 12 · Mastering Middleware | [`Weekend 07 - 8-9 Aug/`](<Weekend 07 - 8-9 Aug/>) |
+| 07 | 8–9 Aug | 12 · Mastering Middleware — 13 · Guardrails & Tool Resilience | [`Weekend 07 - 8-9 Aug/`](<Weekend 07 - 8-9 Aug/>) |
+| 08 | 15–16 Aug | 14 · Shell Tools & Custom Middleware | [`Weekend 08 - 15-16 Aug/`](<Weekend 08 - 15-16 Aug/>) |
+| 09 | 22–23 Aug | 15 · Runtime & Human-in-the-Loop — 16 · MCP Begins | [`Weekend 09 - 22-23 Aug/`](<Weekend 09 - 22-23 Aug/>) |
 
 > New weekends land as new `Weekend NN - Date(s)/` folders — this table grows with the course.
 
@@ -63,6 +65,10 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 | 10 | 26 Jul | Tools Deep Dive | [notes](<classes_summary/10 - 26 Jul - Tools Deep Dive.md>) | ↑ same folder |
 | 11 | 1 Aug | Agents, Middleware & Memory | [notes](<classes_summary/11 - 01 Aug - Agents, Middleware & Memory.md>) | [`Weekend 06/11-12 - 1-8 Aug .../`](<Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/>) |
 | 12 | 8–9 Aug | Mastering Middleware | [notes](<classes_summary/12 - 08 Aug - Mastering Middleware.md>) | ↑ same folder (in Weekend 06) |
+| 13 | 9 Aug | Guardrails, Todo Lists & Tool Resilience | [notes](<classes_summary/13 - 09 Aug - Guardrails, Todo Lists & Tool Resilience.md>) | — *(not yet shared)* |
+| 14 | 16 Aug | Shell Tools & Custom Middleware | [notes](<classes_summary/14 - 16 Aug - Shell Tools & Custom Middleware.md>) | — *(not yet shared)* |
+| 15 | 22 Aug | Runtime Deep Dive & Human-in-the-Loop | [notes](<classes_summary/15 - 22 Aug - Runtime & Human-in-the-Loop.md>) | — *(not yet shared)* |
+| 16 | 23 Aug | MCP 1: Why MCP Had to Exist | [notes](<classes_summary/16 - 23 Aug - MCP Introduction.md>) | [`Weekend 09/23rd Aug - MCP/`](<Weekend 09 - 22-23 Aug/23rd Aug - MCP/>) |
 
 > New weekends land as new `Weekend NN/` folders + a matching file in `classes_summary/` — this table grows with the course.
 
@@ -82,7 +88,7 @@ flowchart TD
     style P4 fill:#22c55e,color:#fff
 ```
 
-This repository currently covers **Phase 0 through the middle of Phase 2** (Classes 00–12) — raw-Python fundamentals all the way through LangChain's middleware system.
+This repository currently covers **Phase 0 through the end of Phase 2, into the start of Phase 3** (Classes 00–16) — raw-Python fundamentals, all the way through LangChain's full middleware system (built-in and custom), runtime internals, human-in-the-loop, and the opening class of the MCP module.
 
 ## 🎬 Recurring Projects You'll See Throughout
 

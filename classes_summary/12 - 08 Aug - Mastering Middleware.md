@@ -212,10 +212,4 @@ A **guardrail** is the concept — the goal of protecting an agent from doing so
 - [ ] 🎭 Try `LLMToolEmulator` on one of your own tools before wiring up the real integration
 
 ---
-
-## 🏁 This Is the Latest Class Documented Here
-
-New sessions land every weekend — check the [root README](../README.md) for the live index as new class folders and summaries are added.
-
----
-*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 07 overview](<../Weekend 07 - 8-9 Aug/README.md>). ⬅️ [Class 11](<11 - 01 Aug - Agents, Middleware & Memory.md>)*
+*Part of the [Live-Class-2026](../README.md) class summary index · ⬆️ [Weekend 07 overview](<../Weekend 07 - 8-9 Aug/README.md>). ⬅️ [Class 11](<11 - 01 Aug - Agents, Middleware & Memory.md>) · ➡️ [Class 13](<13 - 09 Aug - Guardrails, Todo Lists & Tool Resilience.md>)*
