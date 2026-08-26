@@ -18,6 +18,8 @@ flowchart LR
 
 `ShellToolMiddleware` gives an agent real terminal access — the entire trick behind how Claude Code, Cursor, and GitHub Copilot actually edit files on a real machine. From there, the session opens up the six middleware hooks (`before_agent`, `before_model`, `wrap_model_call`, `after_model`, `wrap_tool_call`, `after_agent`), decorator-based vs. class-based middleware, and the "before runs in declared order, after runs in reverse" execution rule — the same stack (LIFO) logic behind why whichever connection opens first should close last.
 
+🔗 Live Colab used in class: [Notebook](https://colab.research.google.com/drive/1CpnGhWhGG4r8NCIoh0WEmcPEVb6KJ2TH?usp=sharing)
+
 ## 🔁 Weekend Navigation
 
 ⬅️ [Weekend 07 — 8-9 Aug](<../Weekend 07 - 8-9 Aug/README.md>) · ⬆️ [Course index](<../README.md>) · ➡️ [Weekend 09 — 22-23 Aug](<../Weekend 09 - 22-23 Aug/README.md>)

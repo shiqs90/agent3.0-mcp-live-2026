@@ -119,5 +119,7 @@ structured_model = openai_model.with_structured_output(SupportTicket)
 | [`Notebook For Reference/Revision_Parts_1-4.ipynb`](<Notebook For Reference/Revision_Parts_1-4.ipynb>) | 08 | Consolidated revision, shared before Class 09 |
 | [`Notebook For Reference/Langchain_structured_output_tools_agents.ipynb`](<Notebook For Reference/Langchain_structured_output_tools_agents.ipynb>) | 08→09 | Bridges into the CineBot arc |
 
+🔗 Live Colabs used in class: [Live session notebook](https://colab.research.google.com/drive/16yT0w6ha6eWK2dOHsOrj7qW8oZiIvGxc?usp=sharing) (models, streaming, tools, structured output, messages) · [Revision Notebook — Parts 1-4](https://colab.research.google.com/drive/1v15iHbt8lsIRsPYw0UgSOCogaenBo4_W?usp=sharing) (source for `Revision_Parts_1-4.ipynb` above)
+
 ---
 ⬆️ [Weekend 04 overview](<../README.md>) · ⬅️ [Class 06](<../../Weekend 03 - 11-12 Jul/06 - 12 Jul - Introduction to LangChain/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 09-10](<../../Weekend 05 - 25-26 Jul/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/README.md>)

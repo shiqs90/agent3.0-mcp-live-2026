@@ -7,6 +7,7 @@
 
 🧰 **New here? Start with [Prerequisites & First-Time Setup](<PREREQUISITES.md>)** — Python, UV, VS Code, and API keys, all in one place before Class 01.
 📖 **Revising a term?** Check the [Glossary](<GLOSSARY.md>) — every recurring concept, one line each, linked back to where it was first taught.
+📓 **Want to follow along live?** Every notebook Mayank actually ran in class is indexed in [Live Colab Notebooks](<COLAB_NOTEBOOKS.md>).
 
 ---
 

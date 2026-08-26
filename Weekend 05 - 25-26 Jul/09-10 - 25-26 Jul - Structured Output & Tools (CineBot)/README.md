@@ -140,7 +140,7 @@ graph TB
 | [`Student_Reference_Structured_Output_and_Tools.ipynb`](<Assignment & Questions/Student_Reference_Structured_Output_and_Tools.ipynb>) | Chapter 2 student reference |
 | [`LangChain_Interview_Questions_Researched.md.pdf`](<Assignment & Questions/LangChain_Interview_Questions_Researched.md.pdf>) | Real interview questions, researched |
 
-🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing)
+🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing) (Class 09) · [Student Reference — Structured Output and Tools](https://colab.research.google.com/drive/1KlOpWf5-KIwsA0UaqWH98eISyZZQphXD?usp=sharing) (Class 10)
 
 ---
 ⬆️ [Weekend 05 overview](<../README.md>) · ⬅️ [Class 07-08](<../../Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/README.md>) · [Course index](<../../README.md>) · ➡️ [Class 11-12](<../../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/README.md>)

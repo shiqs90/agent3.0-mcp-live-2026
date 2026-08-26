@@ -4,6 +4,7 @@
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 25 July 2026 · **⏱️ Duration:** ~4.5 hours
 
 > 📂 **Code for this class:** [`09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb`](<../Weekend 05 - 25-26 Jul/09-10 - 25-26 Jul - Structured Output & Tools (CineBot)/Langchain_Structured_OUTPUT_COLAB.ipynb>) — the real, executed Colab notebook, cells reproduced verbatim below
+> 🔗 Live Colab used in class: [CineBot — Movie Ticket Booking Assistant](https://colab.research.google.com/drive/1BfYVnjabM0BYL0Wr6zqabdFCn6-Waz-T?usp=sharing)
 
 ---
 

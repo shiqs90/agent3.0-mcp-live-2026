@@ -4,6 +4,7 @@
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 19 July 2026 · **⏱️ Duration:** ~4.5 hours
 
 > 📂 **Code for this class:** [`07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb`](<../Weekend 04 - 18-19 Jul/07-08 - 18-19 Jul - LangChain Family & the Model Layer/Notebook For Reference/02_03_environment_models_messages_student_notes.ipynb>)
+> 🔗 Live Colabs used in class: [Live session notebook](https://colab.research.google.com/drive/16yT0w6ha6eWK2dOHsOrj7qW8oZiIvGxc?usp=sharing) · [Revision Notebook — Parts 1-4](https://colab.research.google.com/drive/1v15iHbt8lsIRsPYw0UgSOCogaenBo4_W?usp=sharing)
 
 ---
 

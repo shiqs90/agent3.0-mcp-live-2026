@@ -4,6 +4,7 @@
 **🎙️ Mentor:** Mayank Aggarwal · **📅 Date:** 8–9 August 2026 · **⏱️ Duration:** ~4.5 hours (the notebook's own cells mark a real "9th August" continuation mid-session)
 
 > 📂 **Code for this class:** [`11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/MIddleware.ipynb>) (cells 57–end) · [`Agent-Middleware-Architecture.excalidraw`](<../Weekend 06 - 1 Aug/11-12 - 1-8 Aug - Agents, Memory & Middleware/Agent-Middleware-Architecture.excalidraw>)
+> 🔗 Live Colab used in class: [Middleware notebook](https://colab.research.google.com/drive/1Qt9uU2HhDvtFTWwbbFBYxK86jJypv1w_?usp=sharing)
 
 ---
 

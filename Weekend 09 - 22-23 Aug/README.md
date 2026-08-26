@@ -20,6 +20,8 @@ flowchart LR
 
 Class 15 finally pins down runtime's five components (context, store, stream_writer, execution_info, server_info) against state and tool_runtime, then goes deep on `HumanInTheLoopMiddleware` — the four decision types (`approve`, `edit`, `reject`, `respond`) and conditional interrupts based on a tool call's actual arguments. Class 16 opens the MCP module: why it had to exist (function calling's scaling problem → a shared protocol), the host/client/server architecture, and a real local FastMCP server built and connected live.
 
+🔗 Live Colab used in class: [Class 15 — Runtime & HITL](https://colab.research.google.com/drive/1dFuLlELzyS2NDIBgeVOowrqGJGFPERSL?usp=sharing)
+
 ## 🔁 Weekend Navigation
 
 ⬅️ [Weekend 08 — 15-16 Aug](<../Weekend 08 - 15-16 Aug/README.md>) · ⬆️ [Course index](<../README.md>)
