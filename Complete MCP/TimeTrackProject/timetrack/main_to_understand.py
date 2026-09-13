@@ -61,6 +61,8 @@ from fastmcp import FastMCP
 # Convert to MCP server
 mcp = FastMCP.from_fastapi(app=app)
 
+
+
 if __name__ == "__main__":
     mcp.run()
 
@@ -68,6 +70,7 @@ if __name__ == "__main__":
 @mcp.tool()
 def execute_query_dynamically(query: str, params: list = []) -> list[dict]:
     """Execute a custom SQL query with optional parameters. Access the resource for schema so that you know the tables etc."""
+    
     return db.execute_query(query, params)
 
 @mcp.resource("timesheet://schema")
