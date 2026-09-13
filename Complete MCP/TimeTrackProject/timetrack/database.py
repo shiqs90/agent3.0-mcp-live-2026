@@ -94,6 +94,11 @@ def get_timesheet(employee_name: str, start_date: str | None = None, end_date: s
     conn.close()
     return [_row_to_dict(r) for r in rows]
 
+def execute_query(query: str, params: list = []) -> list[dict]:
+    conn = get_connection()
+    rows = conn.execute(query, params).fetchall()
+    conn.close()
+    return [_row_to_dict(r) for r in rows]
 
 def list_projects() -> list[str]:
     conn = get_connection()

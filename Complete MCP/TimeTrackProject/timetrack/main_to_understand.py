@@ -65,6 +65,29 @@ if __name__ == "__main__":
     mcp.run()
 
 
+@mcp.tool()
+def execute_query_dynamically(query: str, params: list = []) -> list[dict]:
+    """Execute a custom SQL query with optional parameters. Access the resource for schema so that you know the tables etc."""
+    return db.execute_query(query, params)
+
+@mcp.resource("timesheet://schema")
+def get_schema() -> dict:
+    """Return the database schema for reference."""
+    return {
+        "tables": {
+            "time_entries": {
+                "columns": {
+                    "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+                    "employee_name": "TEXT NOT NULL",
+                    "project": "TEXT NOT NULL",
+                    "entry_date": "TEXT NOT NULL",
+                    "hours": "REAL NOT NULL",
+                    "description": "TEXT"
+                }
+            }
+        }
+    }
+
 # @mcp.tool()
 # def log_time(employee_name: str, project: str, entry_date: str, hours: float, description: str = "") -> dict:
 #     """Log a time entry. entry_date must be YYYY-MM-DD. Shows up on the website immediately."""

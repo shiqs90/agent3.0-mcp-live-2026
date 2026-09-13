@@ -40,3 +40,6 @@ def search_recipes(tag: str) -> list[dict]:
 
 if __name__ == "__main__":
     mcp.run()
+
+
+# CLIENT_PORT=9999 npx @modelcontextprotocol/inspector python3 recipebox_fastmcp.py
