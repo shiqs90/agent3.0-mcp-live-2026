@@ -3,7 +3,7 @@
 **All code, notebooks, diagrams, and class-by-class notes for the live Agentic AI 3.0 Specialization with AgentOps.**
 🎙️ Mentor: **Mayank Aggarwal** · 🏫 Krish Naik Academy · 🗓️ Every Saturday & Sunday, 8–11 AM IST
 
-📖 **[Mayank's running notes, Colab links & escalated Q&A →](https://bugs-sleep-6uj.craft.me/agentic3)** · 📄 [Full course brochure (PDF)](<Agentic-3-0.pdf>)
+📖 **[Mayank's running notes, Colab links & escalated Q&A →](https://bugs-sleep-6uj.craft.me/agentic3)** · 📄 [Full course brochure (PDF)](<Weekend 01 - 27-28 Jun/02-03 - 28 Jun & 4 Jul - Python Refresher & Pydantic Deep Dive/Agentic-3-0.pdf>)
 
 🧰 **New here? Start with [Prerequisites & First-Time Setup](<PREREQUISITES.md>)** — Python, UV, VS Code, and API keys, all in one place before Class 01.
 📖 **Revising a term?** Check the [Glossary](<GLOSSARY.md>) — every recurring concept, one line each, linked back to where it was first taught.
@@ -44,6 +44,8 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 | 07 | 8–9 Aug | 12 · Mastering Middleware — 13 · Guardrails & Tool Resilience | [`Weekend 07 - 8-9 Aug/`](<Weekend 07 - 8-9 Aug/>) |
 | 08 | 15–16 Aug | 14 · Shell Tools & Custom Middleware | [`Weekend 08 - 15-16 Aug/`](<Weekend 08 - 15-16 Aug/>) |
 | 09 | 22–23 Aug | 15 · Runtime & Human-in-the-Loop — 16 · MCP Begins | [`Weekend 09 - 22-23 Aug/`](<Weekend 09 - 22-23 Aug/>) |
+| 10 | 5–6 Sep | 17 · MCP Primitives, Architecture & Wiretap | [`Weekend 10 - 5-6 Sep/`](<Weekend 10 - 5-6 Sep/>) |
+| 11 | 12–13 Sep | 18 · Building & Deploying MCP Servers | [`Weekend 11 - 12-13 Sep/`](<Weekend 11 - 12-13 Sep/>) |
 
 > New weekends land as new `Weekend NN - Date(s)/` folders — this table grows with the course.
 
@@ -70,6 +72,8 @@ Open **any** `Weekend NN/` folder on GitHub for a joint recap of both days that 
 | 14 | 16 Aug | Shell Tools & Custom Middleware | [notes](<classes_summary/14 - 16 Aug - Shell Tools & Custom Middleware.md>) | — *(not yet shared)* |
 | 15 | 22 Aug | Runtime Deep Dive & Human-in-the-Loop | [notes](<classes_summary/15 - 22 Aug - Runtime & Human-in-the-Loop.md>) | — *(not yet shared)* |
 | 16 | 23 Aug | MCP 1: Why MCP Had to Exist | [notes](<classes_summary/16 - 23 Aug - MCP Introduction.md>) | [`Weekend 09/23rd Aug - MCP/`](<Weekend 09 - 22-23 Aug/23rd Aug - MCP/>) |
+| 17 | 6 Sep | MCP Primitives, Architecture Recap & Wiretap | [notes](<classes_summary/17 - 6 Sep - MCP Primitives, Architecture & Wiretap.md>) | [`Weekend 10/06 Sep .../`](<Weekend 10 - 5-6 Sep/06 Sep - MCP Primitives & Architecture/>) |
+| 18 | 12–13 Sep | Building & Deploying Real MCP Servers | [notes](<classes_summary/18 - 12-13 Sep - Building & Deploying MCP Servers.md>) | [`Weekend 11/12-13 Sep .../`](<Weekend 11 - 12-13 Sep/12-13 Sep - Building & Deploying MCP Servers/>) |
 
 > New weekends land as new `Weekend NN/` folders + a matching file in `classes_summary/` — this table grows with the course.
 
@@ -89,7 +93,7 @@ flowchart TD
     style P4 fill:#22c55e,color:#fff
 ```
 
-This repository currently covers **Phase 0 through the end of Phase 2, into the start of Phase 3** (Classes 00–16) — raw-Python fundamentals, all the way through LangChain's full middleware system (built-in and custom), runtime internals, human-in-the-loop, and the opening class of the MCP module.
+This repository currently covers **Phase 0 through the end of Phase 2, into Phase 3** (Classes 00–18) — raw-Python fundamentals, all the way through LangChain's full middleware system (built-in and custom), runtime internals, human-in-the-loop, and the MCP module from first principles through real, deployed servers.
 
 ## 🎬 Recurring Projects You'll See Throughout
 
@@ -110,6 +114,7 @@ This repository currently covers **Phase 0 through the end of Phase 2, into the 
 
 - 📖 [Mayank's Craft notes](https://bugs-sleep-6uj.craft.me/agentic3) — links for every class, Colab notebooks, doubt-solving MayankGPT
 - 🛡️ [Mastering Pydantic](https://pydantic-with-mayank.netlify.app) · 🧠 [AI Terms](https://ai-terms-with-mayank.netlify.app) · 🐍 [Agents with Pure Python](https://python-agents-with-mayank.netlify.app/) · 💾 [AI Memory Lab](https://context-with-mayank.netlify.app/)
+- 🔌 [MCP Lifecycle — Conversation Simulator](https://mcp-lifecycle-simulator.netlify.app) · [MCP Lifecycle — Complete Guide](https://mcp-lifecycle.netlify.app)
 - 🔍 [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
 
 ## ▶️ Running Any Class's Code
