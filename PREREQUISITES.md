@@ -58,6 +58,17 @@ uv run main.py
 
 `.env` is git-ignored at the repo root — a real key will never get committed by accident. `.env.example` is the only one that ever ships with placeholder values.
 
+## 6. If `git clone` or `git pull` fails
+
+This repo is checked on every push so it should clone cleanly on Windows, macOS and Linux. If it doesn't:
+
+| Symptom | Fix |
+|---|---|
+| `error: invalid path '...'` or `unable to checkout working tree` | A bad filename slipped in. Tell Mayank the exact path from the error — it's a one-line fix on his side. Then run `git restore --source=HEAD :/` (after the fix is pushed, `git pull`). |
+| `Filename too long` (Windows) | Run `git config --global core.longpaths true`, and clone somewhere short like `C:\src\` instead of a deep OneDrive/Documents folder. |
+| `Your local changes would be overwritten by merge` on `git pull` | Save your work first with `git stash -u`, run `git pull`, then `git stash pop`. |
+| A folder you created never shows up on GitHub | It probably has its own hidden `.git` folder (`uv init` creates one). Delete `<folder>/.git`, or create projects with `uv init --no-vcs`. |
+
 ## ✅ Before Class 01
 
 - [ ] Python 3.10+ and UV installed, `uv --version` runs
