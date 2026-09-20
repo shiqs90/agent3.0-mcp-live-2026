@@ -88,5 +88,5 @@ async def run_agent_loop(user_message: str):
 
 if __name__ == "__main__":
     asyncio.run(run_agent_loop(
-        "List every project in TimeTrack, then give me the summary for the first one."
+        "Hi."
     ))
