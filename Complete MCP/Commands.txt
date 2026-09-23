@@ -4,4 +4,14 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 # set up the project
 uv init mcp-warmup && cd mcp-warmup
+
+# Run in the directory of pyproject.toml
 uv add fastmcp
+
+#I used this command
+uv run server.py
+
+uv run python server.py
+
+#Start MCP inspector
+ npx -y @modelcontextprotocol/inspector uv run python server.py
